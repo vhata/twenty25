@@ -7,7 +7,12 @@
  * Uses React Context + useReducer for predictable state updates.
  */
 
-import { canAddCardToPile, getCategoryName, isPileComplete } from '@/lib/game-utils'
+import {
+  canAddCardToPile,
+  getCategoryName,
+  getPileCategoryId,
+  isPileComplete,
+} from '@/lib/game-utils'
 import type { Category, GameAction, GameData, GameState } from '@/lib/types/game'
 import { type ReactNode, createContext, useContext, useMemo, useReducer } from 'react'
 
@@ -178,19 +183,31 @@ export function GameProvider({ children, initialData }: GameProviderProps) {
         const pile = state.piles.find((p) => p.id === pileId)
 
         if (!card || !pile) {
+          console.log('❌ Card or pile not found:', { cardId, pileId, card, pile })
           return false
         }
 
         // Don't allow adding to completed piles
         if (pile.isComplete) {
+          console.log('❌ Pile is already complete')
           return false
         }
 
+        const pileCategoryId = getPileCategoryId(pile, state.cards)
+        console.log('🔍 Trying to add card to pile:', {
+          card: { id: card.id, title: card.title, categoryId: card.categoryId },
+          pile: { id: pile.id, cardCount: pile.cardIds.length, categoryId: pileCategoryId },
+          match: card.categoryId === pileCategoryId,
+        })
+
         // Validate the move
         if (!canAddCardToPile(card, pile, state.cards)) {
+          console.log('❌ Card does not match pile category')
           dispatch({ type: 'INCREMENT_MISTAKES' })
           return false
         }
+
+        console.log('✅ Card matches pile! Adding to pile')
 
         // Check if this will complete the pile
         const willComplete = pile.cardIds.length + 1 === 45
@@ -218,15 +235,24 @@ export function GameProvider({ children, initialData }: GameProviderProps) {
         const card2 = state.cards.find((c) => c.id === card2Id)
 
         if (!card1 || !card2) {
+          console.log('❌ Card not found:', { card1Id, card2Id, card1, card2 })
           return false
         }
 
+        console.log('🔍 Trying to create pile:', {
+          card1: { id: card1.id, title: card1.title, categoryId: card1.categoryId },
+          card2: { id: card2.id, title: card2.title, categoryId: card2.categoryId },
+          match: card1.categoryId === card2.categoryId,
+        })
+
         // Validate that both cards are from same category
         if (card1.categoryId !== card2.categoryId) {
+          console.log('❌ Cards do not match categories')
           dispatch({ type: 'INCREMENT_MISTAKES' })
           return false
         }
 
+        console.log('✅ Cards match! Creating pile')
         // Valid move - create pile
         dispatch({ type: 'CREATE_PILE', card1Id, card2Id })
         return true
