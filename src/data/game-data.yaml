@@ -1,0 +1,41 @@
+# Card Categorization Game Data
+# Structure: 45 categories with 45 cards each (2025 total cards)
+# This is a starter template - expand to full dataset as needed
+
+categories:
+  - id: category-1
+    name: "Programming Languages"
+    cards:
+      - id: card-1-1
+        title: "JavaScript"
+      - id: card-1-2
+        title: "Python"
+      - id: card-1-3
+        title: "TypeScript"
+      # TODO: Add 42 more cards for this category (45 total)
+
+  - id: category-2
+    name: "Fruits"
+    cards:
+      - id: card-2-1
+        title: "Apple"
+      - id: card-2-2
+        title: "Banana"
+      - id: card-2-3
+        title: "Orange"
+      # TODO: Add 42 more cards for this category (45 total)
+
+  - id: category-3
+    name: "Colors"
+    cards:
+      - id: card-3-1
+        title: "Red"
+      - id: card-3-2
+        title: "Blue"
+      - id: card-3-3
+        title: "Green"
+      # TODO: Add 42 more cards for this category (45 total)
+
+  # TODO: Add 42 more categories (45 total)
+  # Each category should have exactly 45 cards
+  # Category names are revealed only when users complete a pile
