@@ -55,10 +55,9 @@ function validateGameData(data: YAMLData, skipStrictValidation = false): void {
   const { categories } = data
 
   // Check total number of categories (skip in development mode)
-  // For real Wikipedia data, we allow flexibility
-  if (!skipStrictValidation && categories.length < 10) {
+  if (!skipStrictValidation && categories.length !== 45) {
     throw new Error(
-      `Expected at least 10 categories, but found ${categories.length}. Game requires sufficient categories for interesting gameplay.`
+      `Expected exactly 45 categories, but found ${categories.length}. Game requires exactly 45 categories with 45 cards each (2025 total).`
     )
   }
 
@@ -77,10 +76,9 @@ function validateGameData(data: YAMLData, skipStrictValidation = false): void {
     }
 
     // Check card count per category (skip in development mode)
-    // For real Wikipedia data, categories may have fewer than 45 cards
-    if (!skipStrictValidation && category.cards.length < 4) {
+    if (!skipStrictValidation && category.cards.length !== 45) {
       throw new Error(
-        `Category "${category.id}" has only ${category.cards.length} cards, but requires at least 4 for playability`
+        `Category "${category.id}" has ${category.cards.length} cards, but requires exactly 45`
       )
     }
 

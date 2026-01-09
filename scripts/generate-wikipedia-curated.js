@@ -110,29 +110,37 @@ async function main() {
       // Filter out articles that have already been used
       const uniqueArticles = articles.filter((article) => !usedArticles.has(article))
 
-      // Take exactly 45 unique articles (or all available if less than 45)
-      const selectedArticles = uniqueArticles.slice(0, TARGET_ARTICLES_PER_CATEGORY)
-
-      // Add selected articles to the used set
-      selectedArticles.forEach((article) => usedArticles.add(article))
-
-      results.push({
-        name: categoryName,
-        articles: selectedArticles,
-        count: articles.length,
-      })
-
-      const duplicatesSkipped = articles.length - uniqueArticles.length
-      if (duplicatesSkipped > 0) {
+      // Check if we have enough unique articles
+      if (uniqueArticles.length < TARGET_ARTICLES_PER_CATEGORY) {
         console.log(
-          `  ✓ Got ${selectedArticles.length} articles (${articles.length} total, ${duplicatesSkipped} duplicates skipped)`
+          `  ⚠️  Only ${uniqueArticles.length} unique articles available (need ${TARGET_ARTICLES_PER_CATEGORY}), skipping`
         )
+        failCount++
       } else {
-        console.log(
-          `  ✓ Got ${selectedArticles.length} articles (${articles.length} total available)`
-        )
+        // Take exactly 45 unique articles
+        const selectedArticles = uniqueArticles.slice(0, TARGET_ARTICLES_PER_CATEGORY)
+
+        // Add selected articles to the used set
+        selectedArticles.forEach((article) => usedArticles.add(article))
+
+        results.push({
+          name: categoryName,
+          articles: selectedArticles,
+          count: articles.length,
+        })
+
+        const duplicatesSkipped = articles.length - uniqueArticles.length
+        if (duplicatesSkipped > 0) {
+          console.log(
+            `  ✓ Got ${selectedArticles.length} articles (${articles.length} total, ${duplicatesSkipped} duplicates skipped)`
+          )
+        } else {
+          console.log(
+            `  ✓ Got ${selectedArticles.length} articles (${articles.length} total available)`
+          )
+        }
+        successCount++
       }
-      successCount++
     }
 
     // Delay between requests to avoid rate limiting
@@ -146,6 +154,12 @@ async function main() {
     console.log(`⚠️  Failed to fetch ${failCount} categories`)
   }
 
+  if (results.length !== 45) {
+    console.log(`\n⚠️  WARNING: Got ${results.length} categories but need exactly 45 for the game!`)
+    console.log('Please update curated-categories.json with more suitable categories.')
+    process.exit(1)
+  }
+
   // Generate YAML
   const yamlContent = generateYAML(results)
   const outputPath = path.join(__dirname, '../src/data/game-data.yaml')
@@ -155,6 +169,22 @@ async function main() {
 
   console.log(`\n✓ Generated ${results.length} categories`)
   console.log(`✓ Total cards: ${totalCards}`)
+  console.log(
+    `✓ Expected: ${results.length * TARGET_ARTICLES_PER_CATEGORY} cards (45 categories × 45 cards)`
+  )
+
+  // Verify all categories have exactly 45 cards
+  const invalidCategories = results.filter(
+    (cat) => cat.articles.length !== TARGET_ARTICLES_PER_CATEGORY
+  )
+  if (invalidCategories.length > 0) {
+    console.log('\n⚠️  ERROR: Some categories do not have exactly 45 cards:')
+    for (const cat of invalidCategories) {
+      console.log(`  • ${cat.name}: ${cat.articles.length} cards`)
+    }
+    process.exit(1)
+  }
+
   console.log(`✓ Saved to: ${outputPath}\n`)
 
   // Show some sample data
