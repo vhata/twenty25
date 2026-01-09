@@ -27,6 +27,91 @@ function sleep(ms) {
 }
 
 /**
+ * Check if a page is a meta-page (list, glossary, disambiguation, etc.)
+ * Uses both title-based heuristics and Wikipedia metadata for reliability
+ * @param {string} title - Page title to check
+ * @returns {Promise<boolean>} - True if page should be excluded
+ */
+async function isMetaPage(title) {
+  // First check: simple title-based heuristics for obvious cases
+  // This acts as a fast backup when API checks fail
+  const lowerTitle = title.toLowerCase()
+  const metaTitlePatterns = [
+    'list of ',
+    'lists of ',
+    'glossary of ',
+    'index of ',
+    'outline of ',
+    'timeline of ',
+  ]
+
+  if (metaTitlePatterns.some((pattern) => lowerTitle.startsWith(pattern))) {
+    return true
+  }
+
+  // Second check: Wikipedia metadata (more accurate but requires API call)
+  const url = new URL(WIKIPEDIA_API)
+  url.searchParams.set('action', 'query')
+  url.searchParams.set('titles', title)
+  url.searchParams.set('prop', 'categories|pageprops')
+  url.searchParams.set('cllimit', '100') // Get up to 100 categories
+  url.searchParams.set('format', 'json')
+
+  try {
+    const response = await fetch(url.toString(), {
+      headers: {
+        'User-Agent': USER_AGENT,
+      },
+    })
+
+    if (!response.ok) {
+      return false // If we can't check, include it
+    }
+
+    const data = await response.json()
+    const pages = data.query?.pages
+    if (!pages) return false
+
+    const pageId = Object.keys(pages)[0]
+    const page = pages[pageId]
+
+    // Check page properties for disambiguation
+    if (page.pageprops?.disambiguation !== undefined) {
+      return true
+    }
+
+    // Check categories for meta-page indicators
+    const categories = page.categories || []
+    const metaCategoryPatterns = [
+      'Wikipedia lists',
+      'Lists of',
+      'Wikipedia glossaries',
+      'Glossaries of',
+      'Wikipedia indexes',
+      'Indexes of',
+      'Wikipedia outlines',
+      'Outlines of',
+      'Timelines of',
+      'Wikipedia timelines',
+      'Set index articles',
+      'Disambiguation pages',
+    ]
+
+    for (const cat of categories) {
+      const catTitle = cat.title.replace('Category:', '')
+      if (metaCategoryPatterns.some((pattern) => catTitle.includes(pattern))) {
+        return true
+      }
+    }
+
+    return false
+  } catch (error) {
+    // If API check fails, fall back to title-based check
+    return false
+  }
+}
+
+/**
  * Fetch category members from Wikipedia
  * @param {string} categoryName - Category name without "Category:" prefix
  * @param {number} limit - Number of articles to fetch
@@ -58,7 +143,28 @@ async function getCategoryMembers(categoryName, limit = 50) {
     return []
   }
 
-  return data.query.categorymembers.map((member) => member.title)
+  const allTitles = data.query.categorymembers.map((member) => member.title)
+
+  // Filter out meta-pages by checking each title
+  const filteredTitles = []
+  let metaPageCount = 0
+  for (const title of allTitles) {
+    const isMeta = await isMetaPage(title)
+    if (!isMeta) {
+      filteredTitles.push(title)
+    } else {
+      metaPageCount++
+      console.log(`    Filtered meta-page: "${title}"`)
+    }
+    // Small delay to avoid rate limiting
+    await sleep(100)
+  }
+
+  if (metaPageCount > 0) {
+    console.log(`    Total meta-pages filtered: ${metaPageCount}`)
+  }
+
+  return filteredTitles
 }
 
 /**
