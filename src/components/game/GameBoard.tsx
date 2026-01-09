@@ -36,11 +36,15 @@ function DraggableCard({
   title,
   isInPile,
   pileColor,
+  isSelected,
+  onClick,
 }: {
   id: string
   title: string
   isInPile: boolean
   pileColor?: string
+  isSelected?: boolean
+  onClick?: () => void
 }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id,
@@ -53,7 +57,20 @@ function DraggableCard({
     : undefined
 
   return (
-    <div ref={setNodeRef} style={style} {...listeners} {...attributes}>
+    <div
+      ref={setNodeRef}
+      style={style}
+      {...listeners}
+      {...attributes}
+      onClick={(e) => {
+        // Only trigger onClick if not dragging
+        if (!isDragging && onClick) {
+          e.stopPropagation()
+          onClick()
+        }
+      }}
+      className={isSelected ? 'ring-4 ring-green-500 rounded-lg' : ''}
+    >
       <Card
         id={id}
         title={title}
@@ -68,14 +85,30 @@ function DraggableCard({
 /**
  * Droppable Card (for creating piles)
  */
-function DroppableCard({ id, title }: { id: string; title: string }) {
+function DroppableCard({
+  id,
+  title,
+  isSelected,
+  onClick,
+}: {
+  id: string
+  title: string
+  isSelected?: boolean
+  onClick?: () => void
+}) {
   const { isOver, setNodeRef } = useDroppable({
     id: `card-drop-${id}`,
   })
 
   return (
     <div ref={setNodeRef} className={isOver ? 'ring-2 ring-blue-500 rounded-lg' : ''}>
-      <DraggableCard id={id} title={title} isInPile={false} />
+      <DraggableCard
+        id={id}
+        title={title}
+        isInPile={false}
+        isSelected={isSelected}
+        onClick={onClick}
+      />
     </div>
   )
 }
@@ -86,9 +119,11 @@ function DroppableCard({ id, title }: { id: string; title: string }) {
 function DroppablePile({
   pile,
   cards,
+  onClick,
 }: {
   pile: { id: string; cardIds: string[]; isComplete: boolean; revealedCategoryName: string | null }
   cards: Array<{ id: string; title: string }>
+  onClick?: () => void
 }) {
   const { isOver, setNodeRef } = useDroppable({
     id: `pile-drop-${pile.id}`,
@@ -96,7 +131,18 @@ function DroppablePile({
   })
 
   return (
-    <div ref={setNodeRef}>
+    <div
+      ref={setNodeRef}
+      onClick={onClick}
+      onKeyDown={(e) => {
+        if (onClick && (e.key === 'Enter' || e.key === ' ')) {
+          e.preventDefault()
+          onClick()
+        }
+      }}
+      tabIndex={onClick && !pile.isComplete ? 0 : undefined}
+      className={onClick && !pile.isComplete ? 'cursor-pointer' : ''}
+    >
       <Pile
         id={pile.id}
         cards={cards}
@@ -113,6 +159,7 @@ export function GameBoard() {
   const { state, tryCreatePile, tryAddCardToPile, categories } = useGame()
   const [activeId, setActiveId] = useState<string | null>(null)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
+  const [selectedCardId, setSelectedCardId] = useState<string | null>(null)
 
   // Configure sensors for mouse, touch, and pointer interactions
   const sensors = useSensors(
@@ -178,6 +225,54 @@ export function GameBoard() {
     }
   }
 
+  // Handle card click for click-to-select interface
+  function handleCardClick(cardId: string) {
+    // If no card selected, select this one
+    if (!selectedCardId) {
+      setSelectedCardId(cardId)
+      setFeedbackMessage('Card selected. Click another card to group them together.')
+      setTimeout(() => setFeedbackMessage(null), 3000)
+      return
+    }
+
+    // If clicking the same card, deselect it
+    if (selectedCardId === cardId) {
+      setSelectedCardId(null)
+      setFeedbackMessage(null)
+      return
+    }
+
+    // Try to create a pile with the two cards
+    const success = tryCreatePile(selectedCardId, cardId)
+    setSelectedCardId(null)
+
+    if (!success) {
+      setFeedbackMessage("Cards don't belong together!")
+      setTimeout(() => setFeedbackMessage(null), 2000)
+    } else {
+      setFeedbackMessage(null)
+    }
+  }
+
+  // Handle pile click for adding selected card to pile
+  function handlePileClick(pileId: string) {
+    if (!selectedCardId) {
+      setFeedbackMessage('Select a card first, then click a pile to add it.')
+      setTimeout(() => setFeedbackMessage(null), 2000)
+      return
+    }
+
+    const success = tryAddCardToPile(selectedCardId, pileId)
+    setSelectedCardId(null)
+
+    if (!success) {
+      setFeedbackMessage("Card doesn't belong in this pile!")
+      setTimeout(() => setFeedbackMessage(null), 2000)
+    } else {
+      setFeedbackMessage(null)
+    }
+  }
+
   const activeCard = activeId ? state.cards.find((c) => c.id === activeId) : null
 
   return (
@@ -187,9 +282,23 @@ export function GameBoard() {
       onDragStart={handleDragStart}
       onDragEnd={handleDragEnd}
     >
+      {/* Instructions Banner */}
+      <div className="mb-4 bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+        <p className="text-sm text-blue-800">
+          <strong>How to play:</strong> Click a card to select it, then click another card to group
+          them. Or drag and drop cards to group them.
+        </p>
+      </div>
+
       {/* Feedback Toast */}
       {feedbackMessage && (
-        <div className="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-bounce">
+        <div
+          className={`fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg z-50 ${
+            feedbackMessage.includes('selected') || feedbackMessage.includes('Select')
+              ? 'bg-blue-500'
+              : 'bg-red-500'
+          } text-white ${feedbackMessage.includes('selected') ? '' : 'animate-bounce'}`}
+        >
           {feedbackMessage}
         </div>
       )}
@@ -217,7 +326,13 @@ export function GameBoard() {
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
               {ungroupedCards.map((card) => (
-                <DroppableCard key={card.id} id={card.id} title={card.title} />
+                <DroppableCard
+                  key={card.id}
+                  id={card.id}
+                  title={card.title}
+                  isSelected={selectedCardId === card.id}
+                  onClick={() => handleCardClick(card.id)}
+                />
               ))}
             </div>
           )}
@@ -231,7 +346,14 @@ export function GameBoard() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {state.piles.map((pile) => {
               const cards = getPileCards(pile.id, state)
-              return <DroppablePile key={pile.id} pile={pile} cards={cards} />
+              return (
+                <DroppablePile
+                  key={pile.id}
+                  pile={pile}
+                  cards={cards}
+                  onClick={() => handlePileClick(pile.id)}
+                />
+              )
             })}
           </div>
         </div>
