@@ -128,156 +128,156 @@ categories:
       - id: card-2-16
         title: "Demographic marketer"
       - id: card-2-17
-        title: "List of developers of optical scientific equipment"
-      - id: card-2-18
         title: "Educational technologist"
-      - id: card-2-19
+      - id: card-2-18
         title: "Engineer"
-      - id: card-2-20
+      - id: card-2-19
         title: "Engineering technician"
-      - id: card-2-21
+      - id: card-2-20
         title: "Engineering technologist"
-      - id: card-2-22
+      - id: card-2-21
         title: "Geneticist"
-      - id: card-2-23
+      - id: card-2-22
         title: "Geographer"
-      - id: card-2-24
+      - id: card-2-23
         title: "Geologist"
-      - id: card-2-25
+      - id: card-2-24
         title: "Geoprofessions"
-      - id: card-2-26
+      - id: card-2-25
         title: "Government scientist"
-      - id: card-2-27
+      - id: card-2-26
         title: "Healthcare scientist"
-      - id: card-2-28
+      - id: card-2-27
         title: "Independent scientist"
-      - id: card-2-29
+      - id: card-2-28
         title: "Laboratory manager"
-      - id: card-2-30
+      - id: card-2-29
         title: "Laboratory technician"
-      - id: card-2-31
+      - id: card-2-30
         title: "Medical laboratory scientist"
-      - id: card-2-32
+      - id: card-2-31
         title: "Meteorologist"
-      - id: card-2-33
+      - id: card-2-32
         title: "Microbiologist"
-      - id: card-2-34
+      - id: card-2-33
         title: "Neuroscientist"
-      - id: card-2-35
+      - id: card-2-34
         title: "Nurse scientist"
-      - id: card-2-36
+      - id: card-2-35
         title: "Petroleum geologist"
-      - id: card-2-37
+      - id: card-2-36
         title: "Physician-scientist"
-      - id: card-2-38
+      - id: card-2-37
         title: "Physicist"
-      - id: card-2-39
+      - id: card-2-38
         title: "Planetologist"
-      - id: card-2-40
+      - id: card-2-39
         title: "Political economist"
-      - id: card-2-41
+      - id: card-2-40
         title: "Principal investigator"
-      - id: card-2-42
+      - id: card-2-41
         title: "School science technician"
-      - id: card-2-43
+      - id: card-2-42
         title: "Science attaché"
-      - id: card-2-44
+      - id: card-2-43
         title: "Science technician"
-      - id: card-2-45
+      - id: card-2-44
         title: "Scientific glassblowing"
+      - id: card-2-45
+        title: "Technician"
   - id: category-3
-    name: "Maps"
+    name: "Rivers"
     cards:
       - id: card-3-1
-        title: "Map"
+        title: "River"
       - id: card-3-2
-        title: "Portal:Maps"
+        title: "Portal:Rivers"
       - id: card-3-3
-        title: "Map layout"
+        title: "Adhwara"
       - id: card-3-4
-        title: "3D Wayfinder"
+        title: "Anabranch"
       - id: card-3-5
-        title: "2023 French Senate election"
+        title: "Anastomosing stream"
       - id: card-3-6
-        title: "Antonine Itinerary"
+        title: "Avulsion (river)"
       - id: card-3-7
-        title: "Army Map Service"
+        title: "Backwater (river)"
       - id: card-3-8
-        title: "Aspen Movie Map"
+        title: "Baer–Babinet law"
       - id: card-3-9
-        title: "Book of Roads and Kingdoms"
+        title: "Bank (geography)"
       - id: card-3-10
-        title: "Broadband mapping in the United States"
+        title: "Blackwater river"
       - id: card-3-11
-        title: "Caribmap"
+        title: "Blue space"
       - id: card-3-12
-        title: "Detailed City Experience"
+        title: "Bourne (stream)"
       - id: card-3-13
-        title: "Euratlas"
+        title: "Braided river"
       - id: card-3-14
-        title: "Flyover (Apple Maps)"
+        title: "Channel types"
       - id: card-3-15
-        title: "Geography (Ptolemy)"
+        title: "Clearwater river (river type)"
       - id: card-3-16
-        title: "Global Map"
+        title: "Confluence"
       - id: card-3-17
-        title: "GSHHG"
+        title: "Crevasse splay"
       - id: card-3-18
-        title: "HistoAtlas"
+        title: "Current (hydrology)"
       - id: card-3-19
-        title: "Human Footprint"
+        title: "Debouch"
       - id: card-3-20
-        title: "Indoor positioning system"
+        title: "Discharge (hydrology)"
       - id: card-3-21
-        title: "Inglehart–Welzel cultural map of the world"
+        title: "Discharge regime"
       - id: card-3-22
-        title: "Inter-Service Topographical Department"
+        title: "Drainage basin"
       - id: card-3-23
-        title: "Itinerarium"
+        title: "Divide (drainage)"
       - id: card-3-24
-        title: "London Map Fair"
+        title: "Drainage density"
       - id: card-3-25
-        title: "Makan Map"
+        title: "Drainage divide"
       - id: card-3-26
-        title: "MapAction"
+        title: "Drainage system (geomorphology)"
       - id: card-3-27
-        title: "Mapbender"
+        title: "Endangered river"
       - id: card-3-28
-        title: "Maps of present-day countries and dependencies"
+        title: "Entrenched river"
       - id: card-3-29
-        title: "Mapumental"
+        title: "Environmental flow"
       - id: card-3-30
-        title: "Missing Maps"
+        title: "Estuarine turbidity maximum"
       - id: card-3-31
-        title: "Molecular Interaction Maps"
+        title: "Estuary freshwater inflow"
       - id: card-3-32
-        title: "Mongolian manuscript maps"
+        title: "Flood control channel"
       - id: card-3-33
-        title: "National Geographic Maps"
+        title: "Flood pulse concept"
       - id: card-3-34
-        title: "Navionics"
+        title: "Flood-meadow"
       - id: card-3-35
-        title: "Periplus"
+        title: "Floodway (road)"
       - id: card-3-36
-        title: "Pop-up maps"
+        title: "Fluvial landforms of streams"
       - id: card-3-37
-        title: "Red Maps"
+        title: "Frazil ice"
       - id: card-3-38
-        title: "ShakeMap"
+        title: "Glaciolacustrine deposits"
       - id: card-3-39
-        title: "Soleto Map"
+        title: "Hack's law"
       - id: card-3-40
-        title: "SOTA Mapping Project"
+        title: "Helicoidal flow"
       - id: card-3-41
-        title: "Surface map"
+        title: "High water mark"
       - id: card-3-42
-        title: "Timeline of astronomical maps, catalogs, and surveys"
+        title: "Human impact on river systems"
       - id: card-3-43
-        title: "Timeline of geopolitical changes (1900–1999)"
+        title: "Integrated catchment management"
       - id: card-3-44
-        title: "Timeline of geopolitical changes (2000–present)"
+        title: "Intermittent river"
       - id: card-3-45
-        title: "Timeline of geopolitical changes (before 1500)"
+        title: "Izbash formula"
   - id: category-4
     name: "Philosophy of technology"
     cards:
@@ -613,43 +613,43 @@ categories:
       - id: card-7-26
         title: "Kusoge"
       - id: card-7-27
-        title: "List of facial hairstyles"
-      - id: card-7-28
         title: "Kaeli McEwen"
-      - id: card-7-29
+      - id: card-7-28
         title: "Newsfluencer"
-      - id: card-7-30
+      - id: card-7-29
         title: "Normcore"
-      - id: card-7-31
+      - id: card-7-30
         title: "Passion gap"
-      - id: card-7-32
+      - id: card-7-31
         title: "Peclers"
-      - id: card-7-33
+      - id: card-7-32
         title: "Postmodernism"
-      - id: card-7-34
+      - id: card-7-33
         title: "Public opinion"
-      - id: card-7-35
+      - id: card-7-34
         title: "PVC clothing"
-      - id: card-7-36
+      - id: card-7-35
         title: "Radical chic"
-      - id: card-7-37
+      - id: card-7-36
         title: "Retro style"
-      - id: card-7-38
+      - id: card-7-37
         title: "Self-expression values"
-      - id: card-7-39
+      - id: card-7-38
         title: "Unicorn trend"
-      - id: card-7-40
+      - id: card-7-39
         title: "Vintage design"
-      - id: card-7-41
+      - id: card-7-40
         title: "Viral marketing"
-      - id: card-7-42
+      - id: card-7-41
         title: "Viral phenomenon"
-      - id: card-7-43
+      - id: card-7-42
         title: "Vs. (magazine)"
-      - id: card-7-44
+      - id: card-7-43
         title: "VTuber"
-      - id: card-7-45
+      - id: card-7-44
         title: "WGSN (trend forecasting)"
+      - id: card-7-45
+        title: "Yoruba tribal marks"
   - id: category-8
     name: "Music conferences"
     cards:
@@ -840,95 +840,95 @@ categories:
     name: "Movie channels"
     cards:
       - id: card-10-1
-        title: "List of movie television channels"
-      - id: card-10-2
         title: "AFN Movie"
-      - id: card-10-3
+      - id: card-10-2
         title: "AXN Crime"
-      - id: card-10-4
+      - id: card-10-3
         title: "AXN Sci Fi"
-      - id: card-10-5
+      - id: card-10-4
         title: "Blast (African TV channel)"
-      - id: card-10-6
+      - id: card-10-5
         title: "Canal Brasil"
-      - id: card-10-7
+      - id: card-10-6
         title: "Celestial Movies"
-      - id: card-10-8
+      - id: card-10-7
         title: "Cine Español por Movistar Plus+"
-      - id: card-10-9
+      - id: card-10-8
         title: "Cinecanal"
-      - id: card-10-10
+      - id: card-10-9
         title: "Cinecanal Classics"
-      - id: card-10-11
+      - id: card-10-10
         title: "Cinema TV (Bosnia and Herzegovina)"
-      - id: card-10-12
+      - id: card-10-11
         title: "Cinemax (Asian TV channel)"
-      - id: card-10-13
+      - id: card-10-12
         title: "ClassTV"
-      - id: card-10-14
+      - id: card-10-13
         title: "Farsi1"
-      - id: card-10-15
+      - id: card-10-14
         title: "Film 24 (channel)"
-      - id: card-10-16
+      - id: card-10-15
         title: "The Film Detective"
-      - id: card-10-17
+      - id: card-10-16
         title: "Fox Movies (Southeast Asian TV channel)"
-      - id: card-10-18
+      - id: card-10-17
         title: "Fox Movies (TV channel)"
-      - id: card-10-19
+      - id: card-10-18
         title: "HBO Asia"
-      - id: card-10-20
+      - id: card-10-19
         title: "IRIB Namayesh"
-      - id: card-10-21
+      - id: card-10-20
         title: "Iris (TV channel)"
-      - id: card-10-22
+      - id: card-10-21
         title: "Klasik TV"
-      - id: card-10-23
+      - id: card-10-22
         title: "M1 FILM"
-      - id: card-10-24
+      - id: card-10-23
         title: "M1 GOLD"
-      - id: card-10-25
+      - id: card-10-24
         title: "MBC 2 (Saudi TV channel)"
-      - id: card-10-26
+      - id: card-10-25
         title: "MBC Bollywood"
-      - id: card-10-27
+      - id: card-10-26
         title: "MBC Max"
-      - id: card-10-28
+      - id: card-10-27
         title: "MBC Persia"
-      - id: card-10-29
+      - id: card-10-28
         title: "MBC+ Drama"
-      - id: card-10-30
+      - id: card-10-29
         title: "MTV Leffa"
-      - id: card-10-31
+      - id: card-10-30
         title: "Rai 4"
-      - id: card-10-32
+      - id: card-10-31
         title: "SHO×BET"
-      - id: card-10-33
+      - id: card-10-32
         title: "ShortsTV"
-      - id: card-10-34
+      - id: card-10-33
         title: "Silver (TV channel)"
-      - id: card-10-35
+      - id: card-10-34
         title: "Star Action"
-      - id: card-10-36
+      - id: card-10-35
         title: "Star Films"
-      - id: card-10-37
+      - id: card-10-36
         title: "Star Movies"
-      - id: card-10-38
+      - id: card-10-37
         title: "Star Movies (Balkans)"
-      - id: card-10-39
+      - id: card-10-38
         title: "The Studio (TV channel)"
-      - id: card-10-40
+      - id: card-10-39
         title: "Studio Universal"
-      - id: card-10-41
+      - id: card-10-40
         title: "Talking Pictures TV"
-      - id: card-10-42
+      - id: card-10-41
         title: "TNT Africa"
-      - id: card-10-43
+      - id: card-10-42
         title: "Top Crime"
-      - id: card-10-44
+      - id: card-10-43
         title: "Trybe TV"
-      - id: card-10-45
+      - id: card-10-44
         title: "Turner Classic Movies (Northern European TV channel)"
+      - id: card-10-45
+        title: "TCM Movies"
   - id: category-11
     name: "Film preservation"
     cards:
@@ -1123,91 +1123,91 @@ categories:
       - id: card-13-2
         title: "Portal:Minerals"
       - id: card-13-3
-        title: "List of minerals"
-      - id: card-13-4
-        title: "List of minerals recognized by the International Mineralogical Association"
-      - id: card-13-5
-        title: "List of critical mineral raw materials"
-      - id: card-13-6
-        title: "List of mineral symbols"
-      - id: card-13-7
         title: "Gemstone"
-      - id: card-13-8
+      - id: card-13-4
         title: "3T's"
-      - id: card-13-9
+      - id: card-13-5
         title: "3TG"
-      - id: card-13-10
+      - id: card-13-6
         title: "Adranosite"
-      - id: card-13-11
+      - id: card-13-7
         title: "Agglomerate (steel industry)"
-      - id: card-13-12
+      - id: card-13-8
         title: "Alabaster"
-      - id: card-13-13
+      - id: card-13-9
         title: "Andrewsite"
-      - id: card-13-14
+      - id: card-13-10
         title: "Boothite"
-      - id: card-13-15
+      - id: card-13-11
         title: "Britholite-(Ce)"
-      - id: card-13-16
+      - id: card-13-12
         title: "Cacholong"
-      - id: card-13-17
+      - id: card-13-13
         title: "Canasite"
-      - id: card-13-18
+      - id: card-13-14
         title: "Chalconatronite"
-      - id: card-13-19
+      - id: card-13-15
         title: "Chernovite-(Ce)"
-      - id: card-13-20
+      - id: card-13-16
         title: "Chiolite"
-      - id: card-13-21
+      - id: card-13-17
         title: "Concretion"
-      - id: card-13-22
+      - id: card-13-18
         title: "Condurrite"
-      - id: card-13-23
+      - id: card-13-19
         title: "Conflict minerals law"
-      - id: card-13-24
+      - id: card-13-20
         title: "Coupled substitution"
-      - id: card-13-25
+      - id: card-13-21
         title: "Critical raw materials"
-      - id: card-13-26
+      - id: card-13-22
         title: "Dana classification system"
-      - id: card-13-27
+      - id: card-13-23
         title: "Doyleite"
-      - id: card-13-28
+      - id: card-13-24
         title: "Dresserite"
-      - id: card-13-29
+      - id: card-13-25
         title: "Dudleyite"
-      - id: card-13-30
+      - id: card-13-26
         title: "Critical Raw Materials Act"
-      - id: card-13-31
+      - id: card-13-27
         title: "Epigenesis (geology)"
-      - id: card-13-32
+      - id: card-13-28
         title: "Fleischerite"
-      - id: card-13-33
+      - id: card-13-29
         title: "Freudenbergite"
-      - id: card-13-34
+      - id: card-13-30
         title: "Friedelite"
-      - id: card-13-35
+      - id: card-13-31
         title: "Fuller's earth"
-      - id: card-13-36
+      - id: card-13-32
         title: "Fumarole mineral"
-      - id: card-13-37
+      - id: card-13-33
         title: "Hatchettite"
-      - id: card-13-38
+      - id: card-13-34
         title: "Hornfels in Victorian archaeological sites"
-      - id: card-13-39
+      - id: card-13-35
         title: "Humboldtine"
-      - id: card-13-40
+      - id: card-13-36
         title: "Ice"
-      - id: card-13-41
+      - id: card-13-37
         title: "Iddingsite"
-      - id: card-13-42
+      - id: card-13-38
         title: "Industrial mineral"
-      - id: card-13-43
+      - id: card-13-39
         title: "Kazakovite"
-      - id: card-13-44
+      - id: card-13-40
         title: "Keweenawite"
-      - id: card-13-45
+      - id: card-13-41
         title: "Lapis armenus"
+      - id: card-13-42
+        title: "Layered double hydroxides"
+      - id: card-13-43
+        title: "Manganophyllite"
+      - id: card-13-44
+        title: "Maskelynite"
+      - id: card-13-45
+        title: "Metarauchite"
   - id: category-14
     name: "Meteorological phenomena"
     cards:
@@ -1586,372 +1586,372 @@ categories:
       - id: card-18-1
         title: "Cold War"
       - id: card-18-2
-        title: "Outline of the Cold War"
-      - id: card-18-3
         title: "1967 South Vietnam Independence Cup"
-      - id: card-18-4
+      - id: card-18-3
         title: "Abo Elementary School"
-      - id: card-18-5
+      - id: card-18-4
         title: "American Committee for East–West Accord"
-      - id: card-18-6
+      - id: card-18-5
         title: "American–Portuguese conflict"
-      - id: card-18-7
+      - id: card-18-6
         title: "Apocalypse: the Cold War"
-      - id: card-18-8
+      - id: card-18-7
         title: "Aquacade (satellite)"
-      - id: card-18-9
+      - id: card-18-8
         title: "Cold War in Asia"
-      - id: card-18-10
+      - id: card-18-9
         title: "B-Gendarmerie"
-      - id: card-18-11
+      - id: card-18-10
         title: "Bas 60"
-      - id: card-18-12
+      - id: card-18-11
         title: "Bas 90"
-      - id: card-18-13
+      - id: card-18-12
         title: "Operation Beleaguer"
-      - id: card-18-14
+      - id: card-18-13
         title: "Berlin Spy Museum"
-      - id: card-18-15
+      - id: card-18-14
         title: "Operation Blacklist Forty"
-      - id: card-18-16
+      - id: card-18-15
         title: "British Baltic Fishery Protection Service"
-      - id: card-18-17
+      - id: card-18-16
         title: "Captive Nations Week"
-      - id: card-18-18
+      - id: card-18-17
         title: "The Channel Tank"
-      - id: card-18-19
+      - id: card-18-18
         title: "Cultural Cold War"
-      - id: card-18-20
+      - id: card-18-19
         title: "Civil Defence Information Bulletin"
-      - id: card-18-21
+      - id: card-18-20
         title: "Cold War International History Project"
-      - id: card-18-22
+      - id: card-18-21
         title: "Cold War liberal"
-      - id: card-18-23
+      - id: card-18-22
         title: "Cold War playground equipment"
-      - id: card-18-24
+      - id: card-18-23
         title: "Cold War Victory Medal"
-      - id: card-18-25
+      - id: card-18-24
         title: "The Coming Anarchy"
-      - id: card-18-26
+      - id: card-18-25
         title: "Conference of the Committee on Disarmament"
-      - id: card-18-27
+      - id: card-18-26
         title: "Conference on Security and Co-operation in Europe"
-      - id: card-18-28
+      - id: card-18-27
         title: "Confidence-building defense"
-      - id: card-18-29
+      - id: card-18-28
         title: "Coordinating Committee for Multilateral Export Controls"
-      - id: card-18-30
+      - id: card-18-29
         title: "Corfu Channel case"
-      - id: card-18-31
+      - id: card-18-30
         title: "Corfu Channel incident"
-      - id: card-18-32
+      - id: card-18-31
         title: "Culture during the Cold War"
-      - id: card-18-33
+      - id: card-18-32
         title: "Defence Secretariat 19"
-      - id: card-18-34
+      - id: card-18-33
         title: "Detachment Hotel"
-      - id: card-18-35
+      - id: card-18-34
         title: "Détente"
-      - id: card-18-36
+      - id: card-18-35
         title: "Dominican Civil War"
-      - id: card-18-37
+      - id: card-18-36
         title: "East Berlin Affair"
-      - id: card-18-38
+      - id: card-18-37
         title: "Eastern Revolt"
-      - id: card-18-39
+      - id: card-18-38
         title: "Effects of the Cold War"
-      - id: card-18-40
+      - id: card-18-39
         title: "Eighteen Nation Committee on Disarmament"
-      - id: card-18-41
+      - id: card-18-40
         title: "European Peace Marches"
-      - id: card-18-42
+      - id: card-18-41
         title: "Eastern Command (Pakistan)"
-      - id: card-18-43
+      - id: card-18-42
         title: "Exclusive mandate"
-      - id: card-18-44
+      - id: card-18-43
         title: "Exercise Full Play"
-      - id: card-18-45
+      - id: card-18-44
         title: "Exodus of Turks from Bulgaria (1950–1951)"
+      - id: card-18-45
+        title: "The Family of Man"
   - id: category-19
     name: "Board games"
     cards:
       - id: card-19-1
-        title: "List of board games"
-      - id: card-19-2
-        title: "List of cross and circle games"
-      - id: card-19-3
         title: "7 Wonders (board game)"
-      - id: card-19-4
+      - id: card-19-2
         title: "Age of Napoleon (board game)"
-      - id: card-19-5
+      - id: card-19-3
         title: "Alkkagi"
-      - id: card-19-6
+      - id: card-19-4
         title: "All Japan Student Go Federation"
-      - id: card-19-7
+      - id: card-19-5
         title: "Almirante (board game)"
-      - id: card-19-8
+      - id: card-19-6
         title: "Arimaa"
-      - id: card-19-9
+      - id: card-19-7
         title: "Armenian draughts"
-      - id: card-19-10
+      - id: card-19-8
         title: "Asalto"
-      - id: card-19-11
+      - id: card-19-9
         title: "Avalon no Kagi"
-      - id: card-19-12
+      - id: card-19-10
         title: "Azul (board game)"
-      - id: card-19-13
+      - id: card-19-11
         title: "Barbie Queen of the Prom"
-      - id: card-19-14
+      - id: card-19-12
         title: "Barca (board game)"
-      - id: card-19-15
+      - id: card-19-13
         title: "Bärenpark"
-      - id: card-19-16
-        title: "List of baseball tabletop games"
-      - id: card-19-17
+      - id: card-19-14
         title: "Basilinda"
-      - id: card-19-18
+      - id: card-19-15
         title: "Batoo"
-      - id: card-19-19
+      - id: card-19-16
         title: "Battle Dome (toy)"
-      - id: card-19-20
+      - id: card-19-17
         title: "Be a Broadway Star"
-      - id: card-19-21
+      - id: card-19-18
         title: "Bell and Hammer"
-      - id: card-19-22
+      - id: card-19-19
         title: "Bergnein"
-      - id: card-19-23
+      - id: card-19-20
         title: "Billard Nicolas"
-      - id: card-19-24
+      - id: card-19-21
         title: "Blood Rage (board game)"
-      - id: card-19-25
+      - id: card-19-22
         title: "Board game"
-      - id: card-19-26
+      - id: card-19-23
         title: "Board game development"
-      - id: card-19-27
+      - id: card-19-24
         title: "Togyzkumalak"
-      - id: card-19-28
+      - id: card-19-25
         title: "Boardgame Players Association"
-      - id: card-19-29
+      - id: card-19-26
         title: "Bookshelf game"
-      - id: card-19-30
+      - id: card-19-27
         title: "Calico (board game)"
-      - id: card-19-31
+      - id: card-19-28
         title: "Camelot (board game)"
-      - id: card-19-32
+      - id: card-19-29
         title: "Captivade"
-      - id: card-19-33
+      - id: card-19-30
         title: "Castle Panic"
-      - id: card-19-34
+      - id: card-19-31
         title: "Chapayev (game)"
-      - id: card-19-35
+      - id: card-19-32
         title: "Check (pattern)"
-      - id: card-19-36
+      - id: card-19-33
         title: "Chickapig"
-      - id: card-19-37
+      - id: card-19-34
         title: "COIN (board game)"
-      - id: card-19-38
+      - id: card-19-35
         title: "Colonial Diplomacy"
-      - id: card-19-39
+      - id: card-19-36
         title: "Colt Express"
-      - id: card-19-40
+      - id: card-19-37
         title: "Dameo"
-      - id: card-19-41
+      - id: card-19-38
         title: "Dark Souls: The Board Game"
-      - id: card-19-42
+      - id: card-19-39
         title: "Deception (board game)"
-      - id: card-19-43
+      - id: card-19-40
         title: "Diceball"
-      - id: card-19-44
+      - id: card-19-41
         title: "Dobble"
-      - id: card-19-45
+      - id: card-19-42
         title: "Dodgem"
+      - id: card-19-43
+        title: "Eurogame"
+      - id: card-19-44
+        title: "Everdell"
+      - id: card-19-45
+        title: "Feed the Kraken"
   - id: category-20
     name: "Video game genres"
     cards:
       - id: card-20-1
         title: "Video game genre"
       - id: card-20-2
-        title: "List of video game genres"
-      - id: card-20-3
         title: "4X"
-      - id: card-20-4
+      - id: card-20-3
         title: "Action game"
-      - id: card-20-5
+      - id: card-20-4
         title: "Action role-playing game"
-      - id: card-20-6
+      - id: card-20-5
         title: "Action-adventure game"
-      - id: card-20-7
+      - id: card-20-6
         title: "Adventure game"
-      - id: card-20-8
+      - id: card-20-7
         title: "Aim trainer"
-      - id: card-20-9
+      - id: card-20-8
         title: "Arcade shooter"
-      - id: card-20-10
+      - id: card-20-9
         title: "Arena shooter"
-      - id: card-20-11
+      - id: card-20-10
         title: "Art game"
-      - id: card-20-12
+      - id: card-20-11
         title: "Artillery game"
-      - id: card-20-13
+      - id: card-20-12
         title: "Auto battler"
-      - id: card-20-14
+      - id: card-20-13
         title: "Battle royale game"
-      - id: card-20-15
+      - id: card-20-14
         title: "Beat 'em up"
-      - id: card-20-16
+      - id: card-20-15
         title: "Bishōjo game"
-      - id: card-20-17
+      - id: card-20-16
         title: "Blockchain game"
-      - id: card-20-18
+      - id: card-20-17
         title: "Bullet hell"
-      - id: card-20-19
+      - id: card-20-18
         title: "Business simulation game"
-      - id: card-20-20
+      - id: card-20-19
         title: "Casual game"
-      - id: card-20-21
+      - id: card-20-20
         title: "Christian video game"
-      - id: card-20-22
+      - id: card-20-21
         title: "City-building game"
-      - id: card-20-23
+      - id: card-20-22
         title: "Combat flight simulation game"
-      - id: card-20-24
+      - id: card-20-23
         title: "Comedy in video games"
-      - id: card-20-25
+      - id: card-20-24
         title: "Computer wargame"
-      - id: card-20-26
+      - id: card-20-25
         title: "Construction and management simulation"
-      - id: card-20-27
+      - id: card-20-26
         title: "Cozy game"
-      - id: card-20-28
+      - id: card-20-27
         title: "Dating sim"
-      - id: card-20-29
+      - id: card-20-28
         title: "Digital collectible card game"
-      - id: card-20-30
+      - id: card-20-29
         title: "Digital tabletop game"
-      - id: card-20-31
+      - id: card-20-30
         title: "Dungeon crawl"
-      - id: card-20-32
+      - id: card-20-31
         title: "Educational video game"
-      - id: card-20-33
+      - id: card-20-32
         title: "Endless runner"
-      - id: card-20-34
+      - id: card-20-33
         title: "Eroge"
-      - id: card-20-35
+      - id: card-20-34
         title: "Escape room video game"
-      - id: card-20-36
+      - id: card-20-35
         title: "Extraction shooter"
-      - id: card-20-37
+      - id: card-20-36
         title: "Falling-sand game"
-      - id: card-20-38
+      - id: card-20-37
         title: "Farm life sim"
-      - id: card-20-39
+      - id: card-20-38
         title: "Fighting game"
-      - id: card-20-40
+      - id: card-20-39
         title: "First-person shooter"
-      - id: card-20-41
+      - id: card-20-40
         title: "Fishing video game"
-      - id: card-20-42
+      - id: card-20-41
         title: "Flight simulation video game"
-      - id: card-20-43
+      - id: card-20-42
         title: "Friendslop"
-      - id: card-20-44
+      - id: card-20-43
         title: "Game creation system"
-      - id: card-20-45
+      - id: card-20-44
         title: "Girls' video games"
+      - id: card-20-45
+        title: "God game"
   - id: category-21
     name: "Programming languages"
     cards:
       - id: card-21-1
-        title: "List of open-source programming languages"
-      - id: card-21-2
-        title: "List of software programming journals"
-      - id: card-21-3
-        title: "Lists of programming software development tools"
-      - id: card-21-4
         title: "Programming language"
-      - id: card-21-5
+      - id: card-21-2
         title: "A+ (programming language)"
-      - id: card-21-6
+      - id: card-21-3
         title: "ABAP"
-      - id: card-21-7
+      - id: card-21-4
         title: "Ada (programming language)"
-      - id: card-21-8
+      - id: card-21-5
         title: "Address programming language"
-      - id: card-21-9
+      - id: card-21-6
         title: "Agda (programming language)"
-      - id: card-21-10
+      - id: card-21-7
         title: "ALGOL 68"
-      - id: card-21-11
+      - id: card-21-8
         title: "Apache Groovy"
-      - id: card-21-12
+      - id: card-21-9
         title: "APL (programming language)"
-      - id: card-21-13
+      - id: card-21-10
         title: "Apple (programming language)"
-      - id: card-21-14
+      - id: card-21-11
         title: "AppleScript"
-      - id: card-21-15
+      - id: card-21-12
         title: "AspectJ"
-      - id: card-21-16
+      - id: card-21-13
         title: "B (programming language)"
-      - id: card-21-17
+      - id: card-21-14
         title: "BASIC"
-      - id: card-21-18
+      - id: card-21-15
         title: "Behavioral Description Language"
-      - id: card-21-19
+      - id: card-21-16
         title: "BLISS"
-      - id: card-21-20
+      - id: card-21-17
         title: "Boo (programming language)"
-      - id: card-21-21
+      - id: card-21-18
         title: "Boomerang (programming language)"
-      - id: card-21-22
+      - id: card-21-19
         title: "Brainfuck"
-      - id: card-21-23
+      - id: card-21-20
         title: "Bs (programming language)"
-      - id: card-21-24
+      - id: card-21-21
         title: "Cameleon (programming language)"
-      - id: card-21-25
-        title: "The C Programming Language"
-      - id: card-21-26
+      - id: card-21-22
+        title: "C (programming language)"
+      - id: card-21-23
         title: "C Sharp (programming language)"
-      - id: card-21-27
+      - id: card-21-24
+        title: "Template:C sidebar"
+      - id: card-21-25
         title: "Calcpad"
-      - id: card-21-28
+      - id: card-21-26
         title: "Caml"
-      - id: card-21-29
+      - id: card-21-27
         title: "Carbon (programming language)"
-      - id: card-21-30
+      - id: card-21-28
         title: "Cedar (programming language)"
-      - id: card-21-31
+      - id: card-21-29
         title: "Céu (programming language)"
-      - id: card-21-32
+      - id: card-21-30
         title: "Charm (programming language)"
-      - id: card-21-33
+      - id: card-21-31
         title: "Clascal"
-      - id: card-21-34
+      - id: card-21-32
         title: "Clipper (programming language)"
-      - id: card-21-35
+      - id: card-21-33
         title: "Clojure"
-      - id: card-21-36
+      - id: card-21-34
         title: "COMAL"
-      - id: card-21-37
+      - id: card-21-35
         title: "Concordion"
-      - id: card-21-38
+      - id: card-21-36
         title: "Concurrent Haskell"
-      - id: card-21-39
+      - id: card-21-37
         title: "CorbaScript"
-      - id: card-21-40
+      - id: card-21-38
         title: "COWSEL"
-      - id: card-21-41
+      - id: card-21-39
         title: "Crystal (programming language)"
-      - id: card-21-42
+      - id: card-21-40
         title: "Cuneiform (programming language)"
-      - id: card-21-43
+      - id: card-21-41
         title: "D (programming language)"
-      - id: card-21-44
+      - id: card-21-42
         title: "DARSIMCO"
-      - id: card-21-45
+      - id: card-21-43
         title: "Dartmouth Oversimplified Programming Experiment"
+      - id: card-21-44
+        title: "Darwin (programming language)"
+      - id: card-21-45
+        title: "DataFlex"
   - id: category-22
     name: "Sorting algorithms"
     cards:
@@ -2051,93 +2051,93 @@ categories:
       - id: card-23-1
         title: "Communication protocol"
       - id: card-23-2
-        title: "List of network protocols (OSI model)"
-      - id: card-23-3
         title: "Protocol ossification"
-      - id: card-23-4
+      - id: card-23-3
         title: "2BASE-TL"
-      - id: card-23-5
+      - id: card-23-4
         title: "Access stratum"
-      - id: card-23-6
+      - id: card-23-5
         title: "Acknowledgement (data networks)"
-      - id: card-23-7
+      - id: card-23-6
         title: "Alternating bit protocol"
-      - id: card-23-8
+      - id: card-23-7
         title: "AMX192"
-      - id: card-23-9
+      - id: card-23-8
         title: "Apple Filing Protocol"
-      - id: card-23-10
+      - id: card-23-9
         title: "AppleTalk"
-      - id: card-23-11
+      - id: card-23-10
         title: "ARCNET"
-      - id: card-23-12
+      - id: card-23-11
         title: "ATA over Ethernet"
-      - id: card-23-13
+      - id: card-23-12
         title: "ATM adaptation layer"
-      - id: card-23-14
+      - id: card-23-13
         title: "ATM Adaptation Layer 1"
-      - id: card-23-15
+      - id: card-23-14
         title: "ATM Adaptation Layer 2"
-      - id: card-23-16
+      - id: card-23-15
         title: "ATM Adaptation Layer 5"
-      - id: card-23-17
+      - id: card-23-16
         title: "Automatic switched-transport network"
-      - id: card-23-18
+      - id: card-23-17
         title: "Automatically switched optical network"
-      - id: card-23-19
+      - id: card-23-18
         title: "Autonegotiation"
-      - id: card-23-20
+      - id: card-23-19
         title: "Available bit rate"
-      - id: card-23-21
+      - id: card-23-20
         title: "BACnet"
-      - id: card-23-22
+      - id: card-23-21
         title: "Bandwidth allocation protocol"
-      - id: card-23-23
+      - id: card-23-22
         title: "BatiBUS"
-      - id: card-23-24
+      - id: card-23-23
         title: "Bearer-Independent Call Control"
-      - id: card-23-25
+      - id: card-23-24
         title: "BEEP"
-      - id: card-23-26
+      - id: card-23-25
         title: "BIP-8"
-      - id: card-23-27
+      - id: card-23-26
         title: "Bolt (network protocol)"
-      - id: card-23-28
+      - id: card-23-27
         title: "Bonjour Sleep Proxy"
-      - id: card-23-29
+      - id: card-23-28
         title: "BSSGP"
-      - id: card-23-30
+      - id: card-23-29
         title: "C-Bus (protocol)"
-      - id: card-23-31
+      - id: card-23-30
         title: "CANopen"
-      - id: card-23-32
+      - id: card-23-31
         title: "CcTalk"
-      - id: card-23-33
+      - id: card-23-32
         title: "Cell relay"
-      - id: card-23-34
+      - id: card-23-33
         title: "CIMD"
-      - id: card-23-35
+      - id: card-23-34
         title: "Coloured Book protocols"
-      - id: card-23-36
+      - id: card-23-35
         title: "Commercial Internet Protocol Security Option"
-      - id: card-23-37
+      - id: card-23-36
         title: "Common Gateway Interface"
-      - id: card-23-38
+      - id: card-23-37
         title: "Common Industrial Protocol"
-      - id: card-23-39
+      - id: card-23-38
         title: "Comparison of MQTT implementations"
-      - id: card-23-40
+      - id: card-23-39
         title: "Connection-oriented communication"
-      - id: card-23-41
+      - id: card-23-40
         title: "Connectionless communication"
-      - id: card-23-42
+      - id: card-23-41
         title: "Constrained Shortest Path First"
-      - id: card-23-43
+      - id: card-23-42
         title: "Constraint-based Routing Label Distribution Protocol"
-      - id: card-23-44
+      - id: card-23-43
         title: "Content Vectoring Protocol"
-      - id: card-23-45
+      - id: card-23-44
         title: "ControlNet"
+      - id: card-23-45
+        title: "CRC-based framing"
   - id: category-24
     name: "Web browsers"
     cards:
@@ -2239,277 +2239,277 @@ categories:
       - id: card-25-2
         title: "Database dump"
       - id: card-25-3
-        title: "Outline of databases"
-      - id: card-25-4
         title: "Altibase"
-      - id: card-25-5
+      - id: card-25-4
         title: "Database application"
-      - id: card-25-6
+      - id: card-25-5
         title: "Autocommit"
-      - id: card-25-7
+      - id: card-25-6
         title: "Big data"
-      - id: card-25-8
+      - id: card-25-7
         title: "Catalog server"
-      - id: card-25-9
+      - id: card-25-8
         title: "Central Equipment Identity Register"
-      - id: card-25-10
+      - id: card-25-9
         title: "Clone (database)"
-      - id: card-25-11
+      - id: card-25-10
         title: "Commitment ordering"
-      - id: card-25-12
+      - id: card-25-11
         title: "Common data model"
-      - id: card-25-13
+      - id: card-25-12
         title: "Composite index (database)"
-      - id: card-25-14
+      - id: card-25-13
         title: "Concurrency control"
-      - id: card-25-15
+      - id: card-25-14
         title: "Connection string"
-      - id: card-25-16
+      - id: card-25-15
         title: "Couchbase Server"
-      - id: card-25-17
+      - id: card-25-16
         title: "CrocBITE"
-      - id: card-25-18
+      - id: card-25-17
         title: "Dark data"
-      - id: card-25-19
+      - id: card-25-18
         title: "Data access layer"
-      - id: card-25-20
+      - id: card-25-19
         title: "Data administration"
-      - id: card-25-21
+      - id: card-25-20
         title: "Data event"
-      - id: card-25-22
+      - id: card-25-21
         title: "Data item"
-      - id: card-25-23
+      - id: card-25-22
         title: "Data masking"
-      - id: card-25-24
+      - id: card-25-23
         title: "Data mesh"
-      - id: card-25-25
+      - id: card-25-24
         title: "Data pack"
-      - id: card-25-26
+      - id: card-25-25
         title: "Data redundancy"
-      - id: card-25-27
+      - id: card-25-26
         title: "Data store"
-      - id: card-25-28
+      - id: card-25-27
         title: "Data system"
-      - id: card-25-29
+      - id: card-25-28
         title: "Database (journal)"
-      - id: card-25-30
+      - id: card-25-29
         title: "Database connection"
-      - id: card-25-31
+      - id: card-25-30
         title: "Database design"
-      - id: card-25-32
+      - id: card-25-31
         title: "Database firewall"
-      - id: card-25-33
+      - id: card-25-32
         title: "Database machine"
-      - id: card-25-34
+      - id: card-25-33
         title: "Database preservation"
-      - id: card-25-35
+      - id: card-25-34
         title: "Database publishing"
-      - id: card-25-36
+      - id: card-25-35
         title: "Database refactoring"
-      - id: card-25-37
+      - id: card-25-36
         title: "Database transaction schedule"
-      - id: card-25-38
+      - id: card-25-37
         title: "Database virtualization"
-      - id: card-25-39
+      - id: card-25-38
         title: "Database-as-IPC"
-      - id: card-25-40
+      - id: card-25-39
         title: "Datasource"
-      - id: card-25-41
+      - id: card-25-40
         title: "Declarative Referential Integrity"
-      - id: card-25-42
+      - id: card-25-41
         title: "Deductive language"
-      - id: card-25-43
+      - id: card-25-42
         title: "Digital curation"
-      - id: card-25-44
+      - id: card-25-43
         title: "DigitaltMuseum"
-      - id: card-25-45
+      - id: card-25-44
         title: "Distributed concurrency control"
+      - id: card-25-45
+        title: "Document-oriented database"
   - id: category-26
     name: "Software design patterns"
     cards:
       - id: card-26-1
-        title: "List of software architecture styles and patterns"
-      - id: card-26-2
         title: "Software design pattern"
-      - id: card-26-3
+      - id: card-26-2
         title: "Abstract factory pattern"
-      - id: card-26-4
+      - id: card-26-3
         title: "Action–domain–responder"
-      - id: card-26-5
+      - id: card-26-4
         title: "Active object"
-      - id: card-26-6
+      - id: card-26-5
         title: "Active record pattern"
-      - id: card-26-7
+      - id: card-26-6
         title: "Adapter pattern"
-      - id: card-26-8
+      - id: card-26-7
         title: "Aggregate pattern"
-      - id: card-26-9
+      - id: card-26-8
         title: "Applicative functor"
-      - id: card-26-10
+      - id: card-26-9
         title: "Architectural pattern"
-      - id: card-26-11
+      - id: card-26-10
         title: "Asynchronous method invocation"
-      - id: card-26-12
+      - id: card-26-11
         title: "Balking pattern"
-      - id: card-26-13
+      - id: card-26-12
         title: "Behavioral pattern"
-      - id: card-26-14
+      - id: card-26-13
         title: "Binding properties pattern"
-      - id: card-26-15
+      - id: card-26-14
         title: "Black box"
-      - id: card-26-16
+      - id: card-26-15
         title: "Bridge pattern"
-      - id: card-26-17
+      - id: card-26-16
         title: "Broker pattern"
-      - id: card-26-18
+      - id: card-26-17
         title: "Builder pattern"
-      - id: card-26-19
+      - id: card-26-18
         title: "Business delegate pattern"
-      - id: card-26-20
+      - id: card-26-19
         title: "Canonical model"
-      - id: card-26-21
+      - id: card-26-20
         title: "Circuit breaker design pattern"
-      - id: card-26-22
+      - id: card-26-21
         title: "Command pattern"
-      - id: card-26-23
+      - id: card-26-22
         title: "Composite entity pattern"
-      - id: card-26-24
+      - id: card-26-23
         title: "Composite pattern"
-      - id: card-26-25
+      - id: card-26-24
         title: "Composition filters"
-      - id: card-26-26
+      - id: card-26-25
         title: "Concurrency pattern"
-      - id: card-26-27
+      - id: card-26-26
         title: "Creational pattern"
-      - id: card-26-28
+      - id: card-26-27
         title: "Ward Cunningham"
-      - id: card-26-29
+      - id: card-26-28
         title: "Curiously recurring template pattern"
-      - id: card-26-30
+      - id: card-26-29
         title: "Data access object"
-      - id: card-26-31
+      - id: card-26-30
         title: "Data mapper pattern"
-      - id: card-26-32
+      - id: card-26-31
         title: "Data transfer object"
-      - id: card-26-33
+      - id: card-26-32
         title: "Data, context and interaction"
-      - id: card-26-34
+      - id: card-26-33
         title: "Debugging pattern"
-      - id: card-26-35
+      - id: card-26-34
         title: "Decorator pattern"
-      - id: card-26-36
+      - id: card-26-35
         title: "Delegation pattern"
-      - id: card-26-37
+      - id: card-26-36
         title: "Dependency injection"
-      - id: card-26-38
+      - id: card-26-37
         title: "Dependency inversion principle"
-      - id: card-26-39
+      - id: card-26-38
         title: "Blackboard (design pattern)"
-      - id: card-26-40
+      - id: card-26-39
         title: "Chain-of-responsibility pattern"
-      - id: card-26-41
+      - id: card-26-40
         title: "Design Patterns"
-      - id: card-26-42
+      - id: card-26-41
         title: "Differentiated service"
-      - id: card-26-43
+      - id: card-26-42
         title: "Dispose pattern"
-      - id: card-26-44
+      - id: card-26-43
         title: "Distributed design patterns"
-      - id: card-26-45
+      - id: card-26-44
         title: "Double dispatch"
+      - id: card-26-45
+        title: "Double-checked locking"
   - id: category-27
     name: "Cryptocurrencies"
     cards:
       - id: card-27-1
         title: "Cryptocurrency"
       - id: card-27-2
-        title: "List of cryptocurrencies"
-      - id: card-27-3
         title: "$Libra"
-      - id: card-27-4
+      - id: card-27-3
         title: "21Shares"
-      - id: card-27-5
+      - id: card-27-4
         title: "Aave"
-      - id: card-27-6
+      - id: card-27-5
         title: "Airdrop (cryptocurrency)"
-      - id: card-27-7
+      - id: card-27-6
         title: "Avalanche (blockchain platform)"
-      - id: card-27-8
+      - id: card-27-7
         title: "Bitcoin"
-      - id: card-27-9
-        title: "List of bitcoin forks"
-      - id: card-27-10
+      - id: card-27-8
         title: "Bitfinex"
-      - id: card-27-11
+      - id: card-27-9
         title: "Bithumb"
-      - id: card-27-12
+      - id: card-27-10
         title: "Blockchain"
-      - id: card-27-13
+      - id: card-27-11
         title: "BNB Smart Chain (blockchain platform)"
-      - id: card-27-14
+      - id: card-27-12
         title: "Cryptocurrency bubble"
-      - id: card-27-15
+      - id: card-27-13
         title: "Build Finance DAO"
-      - id: card-27-16
+      - id: card-27-14
         title: "Canton Network"
-      - id: card-27-17
+      - id: card-27-15
         title: "Christian Catalini"
-      - id: card-27-18
+      - id: card-27-16
         title: "Chiliz"
-      - id: card-27-19
+      - id: card-27-17
         title: "Cloud mining"
-      - id: card-27-20
+      - id: card-27-18
         title: "Cobden Centre"
-      - id: card-27-21
+      - id: card-27-19
         title: "Coincheck"
-      - id: card-27-22
+      - id: card-27-20
         title: "Colored Coins"
-      - id: card-27-23
+      - id: card-27-21
         title: "Complementary currency"
-      - id: card-27-24
+      - id: card-27-22
         title: "Counterparty (platform)"
-      - id: card-27-25
+      - id: card-27-23
         title: "Crypto Rial"
-      - id: card-27-26
+      - id: card-27-24
         title: "Crypto-trading hamster"
-      - id: card-27-27
+      - id: card-27-25
         title: "Cryptocurrencies in Europe"
-      - id: card-27-28
+      - id: card-27-26
         title: "Cryptocurrency and crime"
-      - id: card-27-29
+      - id: card-27-27
         title: "Cryptocurrency exchange"
-      - id: card-27-30
+      - id: card-27-28
         title: "Cryptoeconomics"
-      - id: card-27-31
+      - id: card-27-29
         title: "Cryptojacking"
-      - id: card-27-32
+      - id: card-27-30
         title: "CryptoNote"
-      - id: card-27-33
+      - id: card-27-31
         title: "The DAO"
-      - id: card-27-34
+      - id: card-27-32
         title: "Decentraland"
-      - id: card-27-35
+      - id: card-27-33
         title: "Decentralized application"
-      - id: card-27-36
+      - id: card-27-34
         title: "Double-spending"
-      - id: card-27-37
+      - id: card-27-35
         title: "Dusting attack"
-      - id: card-27-38
+      - id: card-27-36
         title: "Electrum (software)"
-      - id: card-27-39
+      - id: card-27-37
         title: "Equihash"
-      - id: card-27-40
+      - id: card-27-38
         title: "Financial cryptography"
-      - id: card-27-41
+      - id: card-27-39
         title: "GBDT (digital token)"
-      - id: card-27-42
+      - id: card-27-40
         title: "GHash.io"
-      - id: card-27-43
+      - id: card-27-41
         title: "GPU mining"
-      - id: card-27-44
+      - id: card-27-42
         title: "History of bitcoin"
-      - id: card-27-45
+      - id: card-27-43
         title: "Hodlnaut"
+      - id: card-27-44
+        title: "Hyperbridge"
+      - id: card-27-45
+        title: "ICON (blockchain platform)"
   - id: category-28
     name: "Cooking techniques"
     cards:
@@ -2570,39 +2570,39 @@ categories:
       - id: card-28-28
         title: "Confit"
       - id: card-28-29
-        title: "List of cooking techniques"
-      - id: card-28-30
         title: "Cooking with alcohol"
-      - id: card-28-31
+      - id: card-28-30
         title: "Creaming (cooking)"
-      - id: card-28-32
+      - id: card-28-31
         title: "Culinary triangle"
-      - id: card-28-33
+      - id: card-28-32
         title: "Curdling"
-      - id: card-28-34
+      - id: card-28-33
         title: "Cured fish"
-      - id: card-28-35
+      - id: card-28-34
         title: "Curing (food preservation)"
-      - id: card-28-36
+      - id: card-28-35
         title: "Deconstructed cuisine"
-      - id: card-28-37
+      - id: card-28-36
         title: "Deep frying"
-      - id: card-28-38
+      - id: card-28-37
         title: "Deglazing (cooking)"
-      - id: card-28-39
+      - id: card-28-38
         title: "Degreasing"
-      - id: card-28-40
+      - id: card-28-39
         title: "Discada"
-      - id: card-28-41
+      - id: card-28-40
         title: "Dishwasher salmon"
-      - id: card-28-42
+      - id: card-28-41
         title: "Dredging (cooking)"
-      - id: card-28-43
+      - id: card-28-42
         title: "Dry roasting"
-      - id: card-28-44
+      - id: card-28-43
         title: "Food drying"
-      - id: card-28-45
+      - id: card-28-44
         title: "Dum pukht"
+      - id: card-28-45
+        title: "Earth oven"
   - id: category-29
     name: "Music genres"
     cards:
@@ -2702,465 +2702,465 @@ categories:
       - id: card-30-1
         title: "Art movement"
       - id: card-30-2
-        title: "List of art movements"
-      - id: card-30-3
         title: "Periods in Western art history"
-      - id: card-30-4
+      - id: card-30-3
         title: "Abjection"
-      - id: card-30-5
+      - id: card-30-4
         title: "Abstract art"
-      - id: card-30-6
+      - id: card-30-5
         title: "Abstract impressionism"
-      - id: card-30-7
+      - id: card-30-6
         title: "Academic art"
-      - id: card-30-8
+      - id: card-30-7
         title: "Aestheticism"
-      - id: card-30-9
+      - id: card-30-8
         title: "Africanfuturism"
-      - id: card-30-10
+      - id: card-30-9
         title: "Afrofuturism"
-      - id: card-30-11
+      - id: card-30-10
         title: "Animalier school"
-      - id: card-30-12
+      - id: card-30-11
         title: "Antipodeans"
-      - id: card-30-13
+      - id: card-30-12
         title: "Antwerp Mannerism"
-      - id: card-30-14
+      - id: card-30-13
         title: "Antwerp school"
-      - id: card-30-15
+      - id: card-30-14
         title: "Art dans Tout"
-      - id: card-30-16
+      - id: card-30-15
         title: "Art Deco"
-      - id: card-30-17
+      - id: card-30-16
         title: "Art in Defence of Humanism"
-      - id: card-30-18
+      - id: card-30-17
         title: "Art Nouveau"
-      - id: card-30-19
+      - id: card-30-18
         title: "Arte Informale"
-      - id: card-30-20
+      - id: card-30-19
         title: "Arts and Crafts movement"
-      - id: card-30-21
+      - id: card-30-20
         title: "Asociación Arte Concreto-Invención"
-      - id: card-30-22
+      - id: card-30-21
         title: "Baghdad School"
-      - id: card-30-23
+      - id: card-30-22
         title: "Baroque"
-      - id: card-30-24
+      - id: card-30-23
         title: "Bauhaus"
-      - id: card-30-25
+      - id: card-30-24
         title: "Belarusian icon-painting school of the 16th–18th centuries"
-      - id: card-30-26
+      - id: card-30-25
         title: "Birmingham Group (artists)"
-      - id: card-30-27
+      - id: card-30-26
         title: "The Blockhouse of Boston"
-      - id: card-30-28
+      - id: card-30-27
         title: "Bombay Progressive Artists' Group"
-      - id: card-30-29
+      - id: card-30-28
         title: "Caravaggisti"
-      - id: card-30-30
+      - id: card-30-29
         title: "Classicism"
-      - id: card-30-31
+      - id: card-30-30
         title: "COBRA (art movement)"
-      - id: card-30-32
+      - id: card-30-31
         title: "Color field"
-      - id: card-30-33
+      - id: card-30-32
         title: "Combine painting"
-      - id: card-30-34
+      - id: card-30-33
         title: "Concrete art"
-      - id: card-30-35
+      - id: card-30-34
         title: "Constructivism (art)"
-      - id: card-30-36
+      - id: card-30-35
         title: "Constructivist International"
-      - id: card-30-37
+      - id: card-30-36
         title: "Corporate Memphis"
-      - id: card-30-38
+      - id: card-30-37
         title: "Costumbrismo"
-      - id: card-30-39
+      - id: card-30-38
         title: "Cracking Art"
-      - id: card-30-40
+      - id: card-30-39
         title: "Crystal Cubism"
-      - id: card-30-41
+      - id: card-30-40
         title: "Cubism"
-      - id: card-30-42
+      - id: card-30-41
         title: "Cubist sculpture"
-      - id: card-30-43
+      - id: card-30-42
         title: "Cynical realism"
-      - id: card-30-44
+      - id: card-30-43
         title: "Czech Informel"
-      - id: card-30-45
+      - id: card-30-44
         title: "Danish design"
+      - id: card-30-45
+        title: "Dansaekhwa"
   - id: category-31
     name: "Architectural styles"
     cards:
       - id: card-31-1
         title: "Architectural style"
       - id: card-31-2
-        title: "List of architectural styles"
-      - id: card-31-3
-        title: "Timeline of architectural styles"
-      - id: card-31-4
         title: "Adam style"
-      - id: card-31-5
+      - id: card-31-3
         title: "Aerospace architecture"
-      - id: card-31-6
+      - id: card-31-4
         title: "Aldwych Farcical"
-      - id: card-31-7
+      - id: card-31-5
         title: "American Empire style"
-      - id: card-31-8
+      - id: card-31-6
         title: "Amsterdam School"
-      - id: card-31-9
+      - id: card-31-7
         title: "Ancient Chinese wooden architecture"
-      - id: card-31-10
+      - id: card-31-8
         title: "Architectural school of Nakhchivan"
-      - id: card-31-11
+      - id: card-31-9
         title: "Architecture terrible"
-      - id: card-31-12
+      - id: card-31-10
         title: "Asturian architecture"
-      - id: card-31-13
+      - id: card-31-11
         title: "Australian architectural styles"
-      - id: card-31-14
+      - id: card-31-12
         title: "Australian non-residential architectural styles"
-      - id: card-31-15
+      - id: card-31-13
         title: "Aztec architecture"
-      - id: card-31-16
+      - id: card-31-14
         title: "Badami cave temples"
-      - id: card-31-17
+      - id: card-31-15
         title: "Baroque architecture"
-      - id: card-31-18
+      - id: card-31-16
         title: "Batak architecture"
-      - id: card-31-19
+      - id: card-31-17
         title: "Battle of the Styles"
-      - id: card-31-20
+      - id: card-31-18
         title: "Biedermeier"
-      - id: card-31-21
+      - id: card-31-19
         title: "Boom style architecture"
-      - id: card-31-22
+      - id: card-31-20
         title: "Bossche School"
-      - id: card-31-23
+      - id: card-31-21
         title: "Brabantine Gothic"
-      - id: card-31-24
+      - id: card-31-22
         title: "Brick Expressionism"
-      - id: card-31-25
+      - id: card-31-23
         title: "Building Act 1774"
-      - id: card-31-26
+      - id: card-31-24
         title: "Burnham Baroque"
-      - id: card-31-27
+      - id: card-31-25
         title: "By-pass Variegated"
-      - id: card-31-28
+      - id: card-31-26
         title: "Byzantine architecture"
-      - id: card-31-29
+      - id: card-31-27
         title: "Caihua"
-      - id: card-31-30
+      - id: card-31-28
         title: "Cape Dutch architecture"
-      - id: card-31-31
+      - id: card-31-29
         title: "Caprom"
-      - id: card-31-32
+      - id: card-31-30
         title: "Carolingian architecture"
-      - id: card-31-33
+      - id: card-31-31
         title: "Cas di torto"
-      - id: card-31-34
+      - id: card-31-32
         title: "Chilotan architecture"
-      - id: card-31-35
+      - id: card-31-33
         title: "Chinese architecture"
-      - id: card-31-36
+      - id: card-31-34
         title: "Church architecture"
-      - id: card-31-37
+      - id: card-31-35
         title: "Colonial architecture"
-      - id: card-31-38
+      - id: card-31-36
         title: "Conch house"
-      - id: card-31-39
+      - id: card-31-37
         title: "Construction of Gothic cathedrals"
-      - id: card-31-40
+      - id: card-31-38
         title: "Constructivist architecture"
-      - id: card-31-41
+      - id: card-31-39
         title: "Contemporary architecture"
-      - id: card-31-42
+      - id: card-31-40
         title: "Coptic architecture"
-      - id: card-31-43
+      - id: card-31-41
         title: "Cosmatesque"
-      - id: card-31-44
+      - id: card-31-42
         title: "Cottage window"
-      - id: card-31-45
+      - id: card-31-43
         title: "Dancheong"
+      - id: card-31-44
+        title: "Dingbat (building)"
+      - id: card-31-45
+        title: "Directoire style"
   - id: category-32
     name: "Photography"
     cards:
       - id: card-32-1
         title: "Photography"
       - id: card-32-2
-        title: "List of abbreviations in photography"
-      - id: card-32-3
         title: "Photograph"
-      - id: card-32-4
+      - id: card-32-3
         title: "Photo album"
-      - id: card-32-5
+      - id: card-32-4
         title: "Art photography print types"
-      - id: card-32-6
+      - id: card-32-5
         title: "Blue hour"
-      - id: card-32-7
+      - id: card-32-6
         title: "Carte de visite"
-      - id: card-32-8
+      - id: card-32-7
         title: "Celebrity wall"
-      - id: card-32-9
+      - id: card-32-8
         title: "Crimes de la commune"
-      - id: card-32-10
+      - id: card-32-9
         title: "Disney PhotoPass"
-      - id: card-32-11
+      - id: card-32-10
         title: "Heinrich Ernemann"
-      - id: card-32-12
+      - id: card-32-11
         title: "Freedom of panorama"
-      - id: card-32-13
+      - id: card-32-12
         title: "Golden hour (photography)"
-      - id: card-32-14
+      - id: card-32-13
         title: "Image"
-      - id: card-32-15
+      - id: card-32-14
         title: "Image fidelity"
-      - id: card-32-16
+      - id: card-32-15
         title: "Imaging"
-      - id: card-32-17
+      - id: card-32-16
         title: "Kodak Photo Spot"
-      - id: card-32-18
+      - id: card-32-17
         title: "Lens fungus"
-      - id: card-32-19
+      - id: card-32-18
         title: "Light tent"
-      - id: card-32-20
-        title: "List of photography periodicals"
-      - id: card-32-21
+      - id: card-32-19
         title: "Lo Manh Hung"
-      - id: card-32-22
+      - id: card-32-20
         title: "Minilab"
-      - id: card-32-23
+      - id: card-32-21
         title: "Model release"
-      - id: card-32-24
+      - id: card-32-22
         title: "Monochrome astrophotography techniques"
-      - id: card-32-25
+      - id: card-32-23
         title: "New topographics (photographic genre)"
-      - id: card-32-26
+      - id: card-32-24
         title: "Operational image"
-      - id: card-32-27
+      - id: card-32-25
         title: "Friedrich Paneth"
-      - id: card-32-28
+      - id: card-32-26
         title: "Perceptual MegaPixel"
-      - id: card-32-29
+      - id: card-32-27
         title: "Photo book"
-      - id: card-32-30
+      - id: card-32-28
         title: "Photo booth"
-      - id: card-32-31
+      - id: card-32-29
         title: "Photo recovery"
-      - id: card-32-32
+      - id: card-32-30
         title: "Photo sculpture"
-      - id: card-32-33
+      - id: card-32-31
         title: "Photo-essay"
-      - id: card-32-34
+      - id: card-32-32
         title: "Photographer"
-      - id: card-32-35
+      - id: card-32-33
         title: "Photographers Mate"
-      - id: card-32-36
+      - id: card-32-34
         title: "Photographies"
-      - id: card-32-37
+      - id: card-32-35
         title: "Portal:Photography"
-      - id: card-32-38
+      - id: card-32-36
         title: "Photography and the law"
-      - id: card-32-39
+      - id: card-32-37
         title: "A picture is worth a thousand words"
-      - id: card-32-40
+      - id: card-32-38
         title: "Positive (photography)"
-      - id: card-32-41
+      - id: card-32-39
         title: "Precovery"
-      - id: card-32-42
+      - id: card-32-40
         title: "Say cheese"
-      - id: card-32-43
+      - id: card-32-41
         title: "Science of photography"
-      - id: card-32-44
+      - id: card-32-42
         title: "Semiotics of photography"
-      - id: card-32-45
+      - id: card-32-43
         title: "Slide library"
+      - id: card-32-44
+        title: "Slide show"
+      - id: card-32-45
+        title: "Time for print"
   - id: category-33
     name: "Sculpture"
     cards:
       - id: card-33-1
         title: "Sculpture"
       - id: card-33-2
-        title: "Outline of sculpture"
-      - id: card-33-3
         title: "Anatomical model"
-      - id: card-33-4
+      - id: card-33-3
         title: "Anti-monumentalism"
-      - id: card-33-5
+      - id: card-33-4
         title: "Architectural sculpture"
-      - id: card-33-6
+      - id: card-33-5
         title: "Art doll"
-      - id: card-33-7
+      - id: card-33-6
         title: "Binder (material)"
-      - id: card-33-8
+      - id: card-33-7
         title: "BMW V12 LMR Art Car"
-      - id: card-33-9
+      - id: card-33-8
         title: "Cal the Stoner's Outdoor Intricarved Stone Sculpture Studio"
-      - id: card-33-10
+      - id: card-33-9
         title: "Conservation and restoration of plastic objects"
-      - id: card-33-11
+      - id: card-33-10
         title: "Digital Michelangelo Project"
-      - id: card-33-12
+      - id: card-33-11
         title: "Engraved gem"
-      - id: card-33-13
+      - id: card-33-12
         title: "Etruscan sculpture"
-      - id: card-33-14
+      - id: card-33-13
         title: "Factory glass"
-      - id: card-33-15
+      - id: card-33-14
         title: "Fantasy coffin"
-      - id: card-33-16
+      - id: card-33-15
         title: "Feather tights"
-      - id: card-33-17
+      - id: card-33-16
         title: "Fruit carving"
-      - id: card-33-18
+      - id: card-33-17
         title: "Glass sculpture"
-      - id: card-33-19
+      - id: card-33-18
         title: "Halden sculptures"
-      - id: card-33-20
+      - id: card-33-19
         title: "Hardstone carving"
-      - id: card-33-21
+      - id: card-33-20
         title: "Herm (sculpture)"
-      - id: card-33-22
+      - id: card-33-21
         title: "International Sculpture Day"
-      - id: card-33-23
+      - id: card-33-22
         title: "Khmer sculpture"
-      - id: card-33-24
+      - id: card-33-23
         title: "King Kong Balls"
-      - id: card-33-25
+      - id: card-33-24
         title: "Lapidary style"
-      - id: card-33-26
+      - id: card-33-25
         title: "Lion Tombstones"
-      - id: card-33-27
+      - id: card-33-26
         title: "Local color (visual art)"
-      - id: card-33-28
+      - id: card-33-27
         title: "Masapán"
-      - id: card-33-29
+      - id: card-33-28
         title: "Mathematical sculpture"
-      - id: card-33-30
+      - id: card-33-29
         title: "Micro miniature"
-      - id: card-33-31
+      - id: card-33-30
         title: "Moai kavakava"
-      - id: card-33-32
+      - id: card-33-31
         title: "Modern sculpture"
-      - id: card-33-33
+      - id: card-33-32
         title: "Monumental sculpture"
-      - id: card-33-34
-        title: "List of most expensive sculptures"
-      - id: card-33-35
+      - id: card-33-33
         title: "Obelisk"
-      - id: card-33-36
+      - id: card-33-34
         title: "Plaquette"
-      - id: card-33-37
+      - id: card-33-35
         title: "Register (art)"
-      - id: card-33-38
+      - id: card-33-36
         title: "Renewable energy sculpture"
-      - id: card-33-39
+      - id: card-33-37
         title: "Rinehart School of Sculpture"
-      - id: card-33-40
+      - id: card-33-38
         title: "Sarcophagus"
-      - id: card-33-41
+      - id: card-33-39
         title: "Sculpture (magazine)"
-      - id: card-33-42
+      - id: card-33-40
         title: "Site-specific art"
-      - id: card-33-43
+      - id: card-33-41
         title: "Skulptur"
-      - id: card-33-44
+      - id: card-33-42
         title: "Social sculpture"
-      - id: card-33-45
+      - id: card-33-43
         title: "Soft sculpture"
+      - id: card-33-44
+        title: "Studio glass"
+      - id: card-33-45
+        title: "Symposium de sculpture sur granit de Laongo"
   - id: category-34
     name: "Literary genres"
     cards:
       - id: card-34-1
         title: "Literary genre"
       - id: card-34-2
-        title: "List of genres"
-      - id: card-34-3
-        title: "List of writing genres"
-      - id: card-34-4
         title: "Mashup novel"
-      - id: card-34-5
+      - id: card-34-3
         title: "Aattakatha (performance)"
-      - id: card-34-6
+      - id: card-34-4
         title: "Absurdist fiction"
-      - id: card-34-7
+      - id: card-34-5
         title: "Accessus ad auctores"
-      - id: card-34-8
+      - id: card-34-6
         title: "Action fiction"
-      - id: card-34-9
+      - id: card-34-7
         title: "Adab al-Kudya"
-      - id: card-34-10
+      - id: card-34-8
         title: "Addventure"
-      - id: card-34-11
+      - id: card-34-9
         title: "Adventure fiction"
-      - id: card-34-12
+      - id: card-34-10
         title: "Airport novel"
-      - id: card-34-13
+      - id: card-34-11
         title: "Akjang"
-      - id: card-34-14
+      - id: card-34-12
         title: "Album amicorum"
-      - id: card-34-15
+      - id: card-34-13
         title: "Allogenes"
-      - id: card-34-16
+      - id: card-34-14
         title: "Amatory fiction"
-      - id: card-34-17
+      - id: card-34-15
         title: "Amish romance"
-      - id: card-34-18
+      - id: card-34-16
         title: "Anti-nihilistic novel"
-      - id: card-34-19
+      - id: card-34-17
         title: "Apocalyptic literature"
-      - id: card-34-20
+      - id: card-34-18
         title: "Arabic riddles"
-      - id: card-34-21
+      - id: card-34-19
         title: "Ars praedicandi"
-      - id: card-34-22
+      - id: card-34-20
         title: "Autobiographical novel"
-      - id: card-34-23
+      - id: card-34-21
         title: "Autotheory"
-      - id: card-34-24
+      - id: card-34-22
         title: "Baby book"
-      - id: card-34-25
+      - id: card-34-23
         title: "Backfischroman"
-      - id: card-34-26
+      - id: card-34-24
         title: "Bakhar"
-      - id: card-34-27
+      - id: card-34-25
         title: "Belles-lettres"
-      - id: card-34-28
+      - id: card-34-26
         title: "Biji (Chinese literature)"
-      - id: card-34-29
+      - id: card-34-27
         title: "Bildungsroman"
-      - id: card-34-30
+      - id: card-34-28
         title: "Biographical novel"
-      - id: card-34-31
+      - id: card-34-29
         title: "Bizarro fiction"
-      - id: card-34-32
+      - id: card-34-30
         title: "Bloodhound Mysteries"
-      - id: card-34-33
+      - id: card-34-31
         title: "Campus novel"
-      - id: card-34-34
+      - id: card-34-32
         title: "Captivity narrative"
-      - id: card-34-35
+      - id: card-34-33
         title: "Carnivalesque"
-      - id: card-34-36
+      - id: card-34-34
         title: "Cautionary tale"
-      - id: card-34-37
+      - id: card-34-35
         title: "Champu"
-      - id: card-34-38
+      - id: card-34-36
         title: "Chautisa"
-      - id: card-34-39
+      - id: card-34-37
         title: "Chicago Ledger"
-      - id: card-34-40
+      - id: card-34-38
         title: "Chick lit"
-      - id: card-34-41
+      - id: card-34-39
         title: "Chivalric romance"
-      - id: card-34-42
+      - id: card-34-40
         title: "Christmas horror"
-      - id: card-34-43
+      - id: card-34-41
         title: "Chuanyue"
-      - id: card-34-44
+      - id: card-34-42
         title: "City mysteries"
-      - id: card-34-45
+      - id: card-34-43
         title: "Class S (culture)"
+      - id: card-34-44
+        title: "Climate fiction"
+      - id: card-34-45
+        title: "Closet drama"
   - id: category-35
     name: "Poetic forms"
     cards:
@@ -3318,35 +3318,35 @@ categories:
       - id: card-36-30
         title: "Gish gallop"
       - id: card-36-31
-        title: "Glossary of rhetorical terms"
-      - id: card-36-32
         title: "Grand style (rhetoric)"
-      - id: card-36-33
+      - id: card-36-32
         title: "Greguería"
-      - id: card-36-34
+      - id: card-36-33
         title: "Historical present"
-      - id: card-36-35
+      - id: card-36-34
         title: "Hyperbaton"
-      - id: card-36-36
+      - id: card-36-35
         title: "Hyperbole"
-      - id: card-36-37
+      - id: card-36-36
         title: "Hypocorism"
-      - id: card-36-38
+      - id: card-36-37
         title: "Hypozeuxis"
-      - id: card-36-39
+      - id: card-36-38
         title: "Illth"
-      - id: card-36-40
+      - id: card-36-39
         title: "Innuendo"
-      - id: card-36-41
+      - id: card-36-40
         title: "Irony"
-      - id: card-36-42
+      - id: card-36-41
         title: "Juxtaposition"
-      - id: card-36-43
+      - id: card-36-42
         title: "Kenning"
-      - id: card-36-44
+      - id: card-36-43
         title: "Kettle logic"
-      - id: card-36-45
+      - id: card-36-44
         title: "Literary consonance"
+      - id: card-36-45
+        title: "Loaded language"
   - id: category-37
     name: "Philosophical theories"
     cards:
@@ -3401,45 +3401,45 @@ categories:
       - id: card-37-25
         title: "Life stance"
       - id: card-37-26
-        title: "List of philosophies"
-      - id: card-37-27
         title: "Marx's theory of human nature"
-      - id: card-37-28
+      - id: card-37-27
         title: "Meme"
-      - id: card-37-29
+      - id: card-37-28
         title: "Metafiction"
-      - id: card-37-30
+      - id: card-37-29
         title: "Mirror symbol hypothesis"
-      - id: card-37-31
+      - id: card-37-30
         title: "Neo-Aristotelianism (literature)"
-      - id: card-37-32
+      - id: card-37-31
         title: "Neo-medievalism"
-      - id: card-37-33
+      - id: card-37-32
         title: "Obscurantism"
-      - id: card-37-34
+      - id: card-37-33
         title: "Optimism"
-      - id: card-37-35
+      - id: card-37-34
         title: "Paradigm shift"
-      - id: card-37-36
+      - id: card-37-35
         title: "Perspectivism"
-      - id: card-37-37
+      - id: card-37-36
         title: "Philosophy of Marcus Aurelius"
-      - id: card-37-38
+      - id: card-37-37
         title: "Postanalytic philosophy"
-      - id: card-37-39
+      - id: card-37-38
         title: "Pragmaticism"
-      - id: card-37-40
+      - id: card-37-39
         title: "Pre-theoretic belief"
-      - id: card-37-41
+      - id: card-37-40
         title: "Providentialism"
-      - id: card-37-42
+      - id: card-37-41
         title: "Ranking theory"
-      - id: card-37-43
+      - id: card-37-42
         title: "Reconstructivism"
-      - id: card-37-44
+      - id: card-37-43
         title: "Reflectivism"
-      - id: card-37-45
+      - id: card-37-44
         title: "Russian cosmism"
+      - id: card-37-45
+        title: "Self-indication assumption"
   - id: category-38
     name: "Economic theories"
     cards:
@@ -3539,93 +3539,93 @@ categories:
       - id: card-39-1
         title: "Political ideology"
       - id: card-39-2
-        title: "List of political ideologies"
-      - id: card-39-3
         title: "The 23 objectives of the Australian Democrats"
-      - id: card-39-4
+      - id: card-39-3
         title: "Accidentalism and catastrophism"
-      - id: card-39-5
+      - id: card-39-4
         title: "Afghan nationalism"
-      - id: card-39-6
+      - id: card-39-5
         title: "All-Russian nation"
-      - id: card-39-7
+      - id: card-39-6
         title: "Anarchism"
-      - id: card-39-8
+      - id: card-39-7
         title: "Anarchist communism"
-      - id: card-39-9
+      - id: card-39-8
         title: "Anarcho-capitalism"
-      - id: card-39-10
+      - id: card-39-9
         title: "Anarcho-primitivism"
-      - id: card-39-11
+      - id: card-39-10
         title: "Anarcho-syndicalism"
-      - id: card-39-12
+      - id: card-39-11
         title: "Anti-capitalism"
-      - id: card-39-13
+      - id: card-39-12
         title: "Anti-environmentalism"
-      - id: card-39-14
+      - id: card-39-13
         title: "Anti-Gaullism"
-      - id: card-39-15
+      - id: card-39-14
         title: "Anti-Stalinist left"
-      - id: card-39-16
+      - id: card-39-15
         title: "Anticurialism"
-      - id: card-39-17
+      - id: card-39-16
         title: "Asian values"
-      - id: card-39-18
+      - id: card-39-17
         title: "Australophile"
-      - id: card-39-19
+      - id: card-39-18
         title: "Austria victim theory"
-      - id: card-39-20
+      - id: card-39-19
         title: "Authoritarian conservatism"
-      - id: card-39-21
+      - id: card-39-20
         title: "Ba'athism"
-      - id: card-39-22
+      - id: card-39-21
         title: "Backwardism"
-      - id: card-39-23
+      - id: card-39-22
         title: "Barzanism"
-      - id: card-39-24
+      - id: card-39-23
         title: "Big government"
-      - id: card-39-25
+      - id: card-39-24
         title: "Big tent"
-      - id: card-39-26
+      - id: card-39-25
         title: "Bioconservatism"
-      - id: card-39-27
+      - id: card-39-26
         title: "Black–brown unity"
-      - id: card-39-28
+      - id: card-39-27
         title: "Buddhism and democracy"
-      - id: card-39-29
+      - id: card-39-28
         title: "Castilhism"
-      - id: card-39-30
+      - id: card-39-29
         title: "Centrism"
-      - id: card-39-31
+      - id: card-39-30
         title: "Chauvinism"
-      - id: card-39-32
+      - id: card-39-31
         title: "Chehabism"
-      - id: card-39-33
+      - id: card-39-32
         title: "Circulus (theory)"
-      - id: card-39-34
+      - id: card-39-33
         title: "Classical liberalism"
-      - id: card-39-35
+      - id: card-39-34
         title: "Clerico-nationalism"
-      - id: card-39-36
+      - id: card-39-35
         title: "Communism"
-      - id: card-39-37
+      - id: card-39-36
         title: "Communitarianism"
-      - id: card-39-38
+      - id: card-39-37
         title: "Conservative liberalism"
-      - id: card-39-39
+      - id: card-39-38
         title: "Conservative wave"
-      - id: card-39-40
+      - id: card-39-39
         title: "Corporatism"
-      - id: card-39-41
+      - id: card-39-40
         title: "Country Party (Britain)"
-      - id: card-39-42
+      - id: card-39-41
         title: "Croatian socialism"
-      - id: card-39-43
+      - id: card-39-42
         title: "Curvilinear disparity"
-      - id: card-39-44
+      - id: card-39-43
         title: "Data sovereignty"
-      - id: card-39-45
+      - id: card-39-44
         title: "Dawronoye"
+      - id: card-39-45
+        title: "Defeatism"
   - id: category-40
     name: "Types of socialism"
     cards:
@@ -3816,188 +3816,188 @@ categories:
     name: "Geometric shapes"
     cards:
       - id: card-42-1
-        title: "Glossary of shapes with metaphorical names"
-      - id: card-42-2
         title: "Shape"
-      - id: card-42-3
-        title: "List of two-dimensional geometric shapes"
-      - id: card-42-4
+      - id: card-42-2
         title: "Annulus (mathematics)"
-      - id: card-42-5
+      - id: card-42-3
         title: "Archimedean circle"
-      - id: card-42-6
+      - id: card-42-4
         title: "Auxetics"
-      - id: card-42-7
+      - id: card-42-5
         title: "Balbis"
-      - id: card-42-8
+      - id: card-42-6
         title: "Biconcave disc"
-      - id: card-42-9
+      - id: card-42-7
         title: "Bird (mathematical artwork)"
-      - id: card-42-10
+      - id: card-42-8
         title: "Bistable structure"
-      - id: card-42-11
+      - id: card-42-9
         title: "Body of constant brightness"
-      - id: card-42-12
+      - id: card-42-10
         title: "Catalan surface"
-      - id: card-42-13
+      - id: card-42-11
         title: "Circumgon"
-      - id: card-42-14
+      - id: card-42-12
         title: "Coinage shapes"
-      - id: card-42-15
+      - id: card-42-13
         title: "Conoid"
-      - id: card-42-16
+      - id: card-42-14
         title: "Convex cone"
-      - id: card-42-17
+      - id: card-42-15
         title: "Cross"
-      - id: card-42-18
+      - id: card-42-16
         title: "Cruciform"
-      - id: card-42-19
+      - id: card-42-17
         title: "Developable roller"
-      - id: card-42-20
+      - id: card-42-18
         title: "Equable shape"
-      - id: card-42-21
+      - id: card-42-19
         title: "Equidimensional (geology)"
-      - id: card-42-22
+      - id: card-42-20
         title: "Femisphere"
-      - id: card-42-23
+      - id: card-42-21
         title: "Fusiform"
-      - id: card-42-24
+      - id: card-42-22
         title: "Geometric Shapes (Unicode block)"
-      - id: card-42-25
+      - id: card-42-23
         title: "Gore (segment)"
-      - id: card-42-26
+      - id: card-42-24
         title: "Helicoid"
-      - id: card-42-27
+      - id: card-42-25
         title: "Helix"
-      - id: card-42-28
+      - id: card-42-26
         title: "Hemihelix"
-      - id: card-42-29
+      - id: card-42-27
         title: "Hexafoil"
-      - id: card-42-30
+      - id: card-42-28
         title: "Hyperboloid"
-      - id: card-42-31
+      - id: card-42-29
         title: "Hyperboloid structure"
-      - id: card-42-32
+      - id: card-42-30
         title: "Inverted bell"
-      - id: card-42-33
+      - id: card-42-31
         title: "Isotropic helicoid"
-      - id: card-42-34
+      - id: card-42-32
         title: "Lemon (geometry)"
-      - id: card-42-35
+      - id: card-42-33
         title: "Medial axis"
-      - id: card-42-36
+      - id: card-42-34
         title: "Obconic"
-      - id: card-42-37
+      - id: card-42-35
         title: "Oloid"
-      - id: card-42-38
+      - id: card-42-36
         title: "Paper bag problem"
-      - id: card-42-39
+      - id: card-42-37
         title: "Paraboloid"
-      - id: card-42-40
+      - id: card-42-38
         title: "Parbelos"
-      - id: card-42-41
+      - id: card-42-39
         title: "Periodic table of shapes"
-      - id: card-42-42
+      - id: card-42-40
         title: "Plücker's conoid"
-      - id: card-42-43
+      - id: card-42-41
         title: "Polycon"
-      - id: card-42-44
+      - id: card-42-42
         title: "Pyramid (geometry)"
-      - id: card-42-45
+      - id: card-42-43
         title: "Right conoid"
+      - id: card-42-44
+        title: "Ruled surface"
+      - id: card-42-45
+        title: "Serpentine shape"
   - id: category-43
-    name: "Musical instruments"
+    name: "Gemstones"
     cards:
       - id: card-43-1
-        title: "Musical instrument"
+        title: "Actinolite"
       - id: card-43-2
-        title: "Recording studio as an instrument"
+        title: "Aegirine"
       - id: card-43-3
-        title: "Vintage musical equipment"
+        title: "Afghanite"
       - id: card-43-4
-        title: "Acoustic resonance"
+        title: "Agate"
       - id: card-43-5
-        title: "Action (music)"
+        title: "Albite"
       - id: card-43-6
-        title: "Bar zither"
+        title: "Amazonite"
       - id: card-43-7
-        title: "Brommtopp"
+        title: "Amblygonite"
       - id: card-43-8
-        title: "Caucasian dhol"
+        title: "Andalusite"
       - id: card-43-9
-        title: "Chord Master"
+        title: "Andesine"
       - id: card-43-10
-        title: "Conservation and restoration of musical instruments"
+        title: "Anglesite"
       - id: card-43-11
-        title: "Denis d'or"
+        title: "Anorthite"
       - id: card-43-12
-        title: "Duitara"
+        title: "Anyolite"
       - id: card-43-13
-        title: "Ekola"
+        title: "Apache tears"
       - id: card-43-14
-        title: "EyeHarp"
+        title: "Apatite"
       - id: card-43-15
-        title: "Electric organ"
+        title: "Aquamarine (gem)"
       - id: card-43-16
-        title: "Family of musical instruments"
+        title: "Assembled gem"
       - id: card-43-17
-        title: "Folk instrument"
+        title: "Augite"
       - id: card-43-18
-        title: "Fontomfrom"
+        title: "Axinite"
       - id: card-43-19
-        title: "Harpsichord-viola"
+        title: "Axinite-(Mg)"
       - id: card-43-20
-        title: "List of horn techniques"
+        title: "Azurite"
       - id: card-43-21
-        title: "Instrumental idiom"
+        title: "Azurmalachite"
       - id: card-43-22
-        title: "Instrumentation (music)"
+        title: "Baryte"
       - id: card-43-23
-        title: "Janzi (musical instrument)"
+        title: "Bayldonite"
       - id: card-43-24
-        title: "Kurdish musical instruments"
+        title: "Belomorite"
       - id: card-43-25
-        title: "Lead instrument"
+        title: "Benitoite"
       - id: card-43-26
-        title: "Membranophone"
+        title: "Bisbee Blue"
       - id: card-43-27
-        title: "Music store"
+        title: "Black Falcon (diamond)"
       - id: card-43-28
-        title: "Music technology"
+        title: "Bowenite"
       - id: card-43-29
-        title: "Music technology (electric)"
+        title: "Brazilianite"
       - id: card-43-30
-        title: "Music technology (electronic and digital)"
+        title: "Bytownite"
       - id: card-43-31
-        title: "Music technology (mechanical)"
+        title: "Callaïs"
       - id: card-43-32
-        title: "Musical instrument classification"
+        title: "Canary Diamond"
       - id: card-43-33
-        title: "Novation Launchpad"
+        title: "Celestine (mineral)"
       - id: card-43-34
-        title: "Ọjà"
+        title: "Cerussite"
       - id: card-43-35
-        title: "Optical sound"
+        title: "Chiastolite"
       - id: card-43-36
-        title: "Organ landscape of East Frisia"
+        title: "Chlorastrolite"
       - id: card-43-37
-        title: "Planephones"
+        title: "Chrysocolla"
       - id: card-43-38
-        title: "Shorthand for orchestra instrumentation"
+        title: "Clinohumite"
       - id: card-43-39
-        title: "Music instrument technology"
+        title: "Cordierite"
       - id: card-43-40
-        title: "Thomann (retailer)"
+        title: "Cubic zirconia"
       - id: card-43-41
-        title: "Tonograph"
+        title: "Dallasite"
       - id: card-43-42
-        title: "List of transposing instruments"
+        title: "Danburite"
       - id: card-43-43
-        title: "Transposing instrument"
+        title: "Datolite"
       - id: card-43-44
-        title: "Woodwind instrument"
+        title: "Dioptase"
       - id: card-43-45
-        title: "Zeitschrift für Instrumentenbau"
+        title: "Dumortierite"
   - id: category-44
     name: "Sports equipment"
     cards:
@@ -4097,90 +4097,90 @@ categories:
       - id: card-45-1
         title: "Myth"
       - id: card-45-2
-        title: "List of mythologies"
-      - id: card-45-3
         title: "2012 phenomenon"
-      - id: card-45-4
+      - id: card-45-3
         title: "Antemurale myth"
-      - id: card-45-5
+      - id: card-45-4
         title: "Apocalypse"
-      - id: card-45-6
+      - id: card-45-5
         title: "Archaeomythology"
-      - id: card-45-7
+      - id: card-45-6
         title: "Branding national myths and symbols"
-      - id: card-45-8
+      - id: card-45-7
         title: "Cambridge Ritualists"
-      - id: card-45-9
+      - id: card-45-8
         title: "Mythological cosmology"
-      - id: card-45-10
+      - id: card-45-9
         title: "Cypress of Kashmar"
-      - id: card-45-11
+      - id: card-45-10
         title: "Demythologization"
-      - id: card-45-12
+      - id: card-45-11
         title: "Divine Council"
-      - id: card-45-13
+      - id: card-45-12
         title: "Duzgin Bawo"
-      - id: card-45-14
+      - id: card-45-13
         title: "End time"
-      - id: card-45-15
+      - id: card-45-14
         title: "Eschatology"
-      - id: card-45-16
+      - id: card-45-15
         title: "Etiology"
-      - id: card-45-17
+      - id: card-45-16
         title: "Euhemerism"
-      - id: card-45-18
+      - id: card-45-17
         title: "Family tree of Japanese deities"
-      - id: card-45-19
+      - id: card-45-18
         title: "Forgiveness"
-      - id: card-45-20
+      - id: card-45-19
         title: "Gengen-Wer"
-      - id: card-45-21
+      - id: card-45-20
         title: "Hau (anthropology)"
-      - id: card-45-22
+      - id: card-45-21
         title: "Henet"
-      - id: card-45-23
+      - id: card-45-22
         title: "Horse symbolism"
-      - id: card-45-24
+      - id: card-45-23
         title: "Insects in mythology"
-      - id: card-45-25
+      - id: card-45-24
         title: "Lafaek Diak"
-      - id: card-45-26
+      - id: card-45-25
         title: "The Legend of Diyes"
-      - id: card-45-27
+      - id: card-45-26
         title: "Legend of the Four Blood Bars"
-      - id: card-45-28
+      - id: card-45-27
         title: "Lexicon Iconographicum Mythologiae Classicae"
-      - id: card-45-29
+      - id: card-45-28
         title: "Lower mythology"
-      - id: card-45-30
+      - id: card-45-29
         title: "Luminous gemstones"
-      - id: card-45-31
+      - id: card-45-30
         title: "Meitei guardians of the directions"
-      - id: card-45-32
+      - id: card-45-31
         title: "Missing Sun motif"
-      - id: card-45-33
+      - id: card-45-32
         title: "Mythology of Oceania"
-      - id: card-45-34
+      - id: card-45-33
         title: "Namas (rishi)"
-      - id: card-45-35
+      - id: card-45-34
         title: "Nebris (mythology)"
-      - id: card-45-36
+      - id: card-45-35
         title: "New Testament and Mythology"
-      - id: card-45-37
+      - id: card-45-36
         title: "Origin of death"
-      - id: card-45-38
+      - id: card-45-37
         title: "Oro Religion"
-      - id: card-45-39
+      - id: card-45-38
         title: "Petrifaction in mythology and fiction"
-      - id: card-45-40
+      - id: card-45-39
         title: "Prophecy"
-      - id: card-45-41
+      - id: card-45-40
         title: "Pseudo-mythology"
-      - id: card-45-42
+      - id: card-45-41
         title: "Resurrection"
-      - id: card-45-43
+      - id: card-45-42
         title: "Snakes in mythology"
-      - id: card-45-44
+      - id: card-45-43
         title: "Vaduthala Nair"
-      - id: card-45-45
+      - id: card-45-44
         title: "The Wake of the Gods"
+      - id: card-45-45
+        title: "The Witch of Atlas"
