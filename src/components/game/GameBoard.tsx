@@ -159,7 +159,7 @@ export function GameBoard() {
   const { state, tryCreatePile, tryAddCardToPile, categories } = useGame()
   const [activeId, setActiveId] = useState<string | null>(null)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
-  const [selectedCardId, setSelectedCardId] = useState<string | null>(null)
+  const [selectedCardIds, setSelectedCardIds] = useState<string[]>([])
 
   // Configure sensors for mouse, touch, and pointer interactions
   const sensors = useSensors(
@@ -225,51 +225,101 @@ export function GameBoard() {
     }
   }
 
-  // Handle card click for click-to-select interface
+  // Handle card click for multi-select interface
   function handleCardClick(cardId: string) {
-    // If no card selected, select this one
-    if (!selectedCardId) {
-      setSelectedCardId(cardId)
-      setFeedbackMessage('Card selected. Click another card to group them together.')
-      setTimeout(() => setFeedbackMessage(null), 3000)
-      return
-    }
-
-    // If clicking the same card, deselect it
-    if (selectedCardId === cardId) {
-      setSelectedCardId(null)
+    // If card is already selected, deselect it
+    if (selectedCardIds.includes(cardId)) {
+      setSelectedCardIds(selectedCardIds.filter((id) => id !== cardId))
       setFeedbackMessage(null)
       return
     }
 
-    // Try to create a pile with the two cards
-    const success = tryCreatePile(selectedCardId, cardId)
-    setSelectedCardId(null)
+    // Add card to selection
+    setSelectedCardIds([...selectedCardIds, cardId])
+
+    if (selectedCardIds.length === 0) {
+      setFeedbackMessage('Card selected. Select more cards to group them together.')
+      setTimeout(() => setFeedbackMessage(null), 3000)
+    } else {
+      setFeedbackMessage(`${selectedCardIds.length + 1} cards selected`)
+      setTimeout(() => setFeedbackMessage(null), 2000)
+    }
+  }
+
+  // Create pile from all selected cards
+  function handleCreatePileFromSelected() {
+    if (selectedCardIds.length < 2) {
+      setFeedbackMessage('Select at least 2 cards to create a pile')
+      setTimeout(() => setFeedbackMessage(null), 2000)
+      return
+    }
+
+    // Start with first two cards
+    const [first, second, ...rest] = selectedCardIds
+    const success = tryCreatePile(first, second)
 
     if (!success) {
       setFeedbackMessage("Cards don't belong together!")
       setTimeout(() => setFeedbackMessage(null), 2000)
+      setSelectedCardIds([])
+      return
+    }
+
+    // Find the pile that was just created
+    const newPile = state.piles[state.piles.length - 1]
+
+    // Try to add remaining cards to the pile
+    let failedCards = 0
+    for (const cardId of rest) {
+      const addSuccess = tryAddCardToPile(cardId, newPile.id)
+      if (!addSuccess) {
+        failedCards++
+      }
+    }
+
+    setSelectedCardIds([])
+
+    if (failedCards > 0) {
+      setFeedbackMessage(`Pile created! ${failedCards} card(s) didn't match and were not added.`)
+      setTimeout(() => setFeedbackMessage(null), 3000)
     } else {
-      setFeedbackMessage(null)
+      setFeedbackMessage('Pile created successfully!')
+      setTimeout(() => setFeedbackMessage(null), 2000)
     }
   }
 
-  // Handle pile click for adding selected card to pile
+  // Handle pile click for adding selected cards to pile
   function handlePileClick(pileId: string) {
-    if (!selectedCardId) {
-      setFeedbackMessage('Select a card first, then click a pile to add it.')
+    if (selectedCardIds.length === 0) {
+      setFeedbackMessage('Select cards first, then click a pile to add them.')
       setTimeout(() => setFeedbackMessage(null), 2000)
       return
     }
 
-    const success = tryAddCardToPile(selectedCardId, pileId)
-    setSelectedCardId(null)
+    // Try to add all selected cards to the pile
+    let successCount = 0
+    let failCount = 0
 
-    if (!success) {
-      setFeedbackMessage("Card doesn't belong in this pile!")
+    for (const cardId of selectedCardIds) {
+      const success = tryAddCardToPile(cardId, pileId)
+      if (success) {
+        successCount++
+      } else {
+        failCount++
+      }
+    }
+
+    setSelectedCardIds([])
+
+    if (failCount > 0 && successCount > 0) {
+      setFeedbackMessage(`Added ${successCount} card(s). ${failCount} didn't match.`)
+      setTimeout(() => setFeedbackMessage(null), 3000)
+    } else if (failCount > 0) {
+      setFeedbackMessage("Cards don't belong in this pile!")
       setTimeout(() => setFeedbackMessage(null), 2000)
     } else {
-      setFeedbackMessage(null)
+      setFeedbackMessage(`Added ${successCount} card(s) to pile`)
+      setTimeout(() => setFeedbackMessage(null), 2000)
     }
   }
 
@@ -285,10 +335,25 @@ export function GameBoard() {
       {/* Instructions Banner */}
       <div className="mb-4 bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
         <p className="text-sm text-blue-800">
-          <strong>How to play:</strong> Click a card to select it, then click another card to group
-          them. Or drag and drop cards to group them.
+          <strong>How to play:</strong> Click cards to select them (you can select multiple!), then
+          use the "Create Pile" button or click an existing pile. Or drag and drop cards to group
+          them.
         </p>
       </div>
+
+      {/* Create Pile Button */}
+      {selectedCardIds.length >= 2 && (
+        <div className="mb-4 flex justify-center">
+          <button
+            type="button"
+            onClick={handleCreatePileFromSelected}
+            className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors shadow-md"
+          >
+            Create Pile from {selectedCardIds.length} Selected Card
+            {selectedCardIds.length > 1 ? 's' : ''}
+          </button>
+        </div>
+      )}
 
       {/* Feedback Toast */}
       {feedbackMessage && (
@@ -330,7 +395,7 @@ export function GameBoard() {
                   key={card.id}
                   id={card.id}
                   title={card.title}
-                  isSelected={selectedCardId === card.id}
+                  isSelected={selectedCardIds.includes(card.id)}
                   onClick={() => handleCardClick(card.id)}
                 />
               ))}
