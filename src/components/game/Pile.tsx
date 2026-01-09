@@ -9,6 +9,14 @@
 
 import { Card } from './Card'
 
+/**
+ * Strips parenthetical disambiguations from Wikipedia titles
+ * e.g., "Phenomenology (philosophy)" → "Phenomenology"
+ */
+function stripParenthetical(title: string): string {
+  return title.replace(/\s*\([^)]*\)\s*$/g, '').trim()
+}
+
 interface PileProps {
   id: string
   cards: Array<{ id: string; title: string }>
@@ -42,7 +50,9 @@ export function Pile({
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <h3 className="text-lg font-bold text-green-700">{revealedCategoryName}</h3>
+              <h3 className="text-lg font-bold text-green-700">
+                {stripParenthetical(revealedCategoryName)}
+              </h3>
             </div>
             <p className="text-xs text-green-600 font-medium">Complete!</p>
           </div>

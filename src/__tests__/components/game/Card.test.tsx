@@ -87,4 +87,26 @@ describe('Card', () => {
 
     expect(bgColorClass1).toEqual(bgColorClass2)
   })
+
+  it('should strip parenthetical disambiguations from Wikipedia titles', () => {
+    render(<Card id="card-1" title="Phenomenology (philosophy)" />)
+
+    // Should display without parenthetical
+    expect(screen.getByText('Phenomenology')).toBeInTheDocument()
+    // Should not display the full title with parenthetical
+    expect(screen.queryByText('Phenomenology (philosophy)')).not.toBeInTheDocument()
+  })
+
+  it('should strip multiple parentheticals if present', () => {
+    render(<Card id="card-1" title="Wicked (musical)" />)
+
+    expect(screen.getByText('Wicked')).toBeInTheDocument()
+    expect(screen.queryByText('Wicked (musical)')).not.toBeInTheDocument()
+  })
+
+  it('should handle titles without parentheticals normally', () => {
+    render(<Card id="card-1" title="Regular Title" />)
+
+    expect(screen.getByText('Regular Title')).toBeInTheDocument()
+  })
 })

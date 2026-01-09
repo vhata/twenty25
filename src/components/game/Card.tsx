@@ -16,6 +16,14 @@ interface CardProps {
 }
 
 /**
+ * Strips parenthetical disambiguations from Wikipedia titles
+ * e.g., "Phenomenology (philosophy)" → "Phenomenology"
+ */
+function stripParenthetical(title: string): string {
+  return title.replace(/\s*\([^)]*\)\s*$/g, '').trim()
+}
+
+/**
  * Generates a consistent color for a pile based on its index.
  * Uses Tailwind-safe color classes.
  */
@@ -63,7 +71,9 @@ export function Card({ id, title, isDragging = false, isInPile = false, pileColo
       `}
       data-card-id={id}
     >
-      <p className="text-sm font-medium text-gray-800 text-center break-words">{title}</p>
+      <p className="text-sm font-medium text-gray-800 text-center break-words">
+        {stripParenthetical(title)}
+      </p>
     </div>
   )
 }
