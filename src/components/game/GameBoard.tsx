@@ -14,8 +14,14 @@ import {
   type DragEndEvent,
   DragOverlay,
   type DragStartEvent,
+  MouseSensor,
+  PointerSensor,
+  TouchSensor,
+  closestCenter,
   useDraggable,
   useDroppable,
+  useSensor,
+  useSensors,
 } from '@dnd-kit/core'
 import { useState } from 'react'
 import { Card } from './Card'
@@ -108,6 +114,26 @@ export function GameBoard() {
   const [activeId, setActiveId] = useState<string | null>(null)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
 
+  // Configure sensors for mouse, touch, and pointer interactions
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 8, // 8px of movement required to start drag
+      },
+    }),
+    useSensor(MouseSensor, {
+      activationConstraint: {
+        distance: 8,
+      },
+    }),
+    useSensor(TouchSensor, {
+      activationConstraint: {
+        delay: 200, // 200ms delay for touch to distinguish from scrolling
+        tolerance: 8,
+      },
+    })
+  )
+
   const ungroupedCards = getUngroupedCards(state)
 
   function handleDragStart(event: DragStartEvent) {
@@ -127,6 +153,12 @@ export function GameBoard() {
     // Check if dropped on a card (to create a pile)
     if (dropTargetId.startsWith('card-drop-')) {
       const targetCardId = dropTargetId.replace('card-drop-', '')
+
+      // Prevent dropping a card on itself
+      if (draggedCardId === targetCardId) {
+        return
+      }
+
       const success = tryCreatePile(draggedCardId, targetCardId)
 
       if (!success) {
@@ -149,7 +181,12 @@ export function GameBoard() {
   const activeCard = activeId ? state.cards.find((c) => c.id === activeId) : null
 
   return (
-    <DndContext onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
+    <DndContext
+      sensors={sensors}
+      collisionDetection={closestCenter}
+      onDragStart={handleDragStart}
+      onDragEnd={handleDragEnd}
+    >
       {/* Feedback Toast */}
       {feedbackMessage && (
         <div className="fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-bounce">
