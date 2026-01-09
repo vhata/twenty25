@@ -37,6 +37,7 @@ function DraggableCard({
   isInPile,
   pileColor,
   isSelected,
+  isGrouped,
   onClick,
 }: {
   id: string
@@ -44,10 +45,12 @@ function DraggableCard({
   isInPile: boolean
   pileColor?: string
   isSelected?: boolean
+  isGrouped?: boolean
   onClick?: () => void
 }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
     id,
+    disabled: isGrouped, // Disable dragging for grouped cards
   })
 
   const style = transform
@@ -60,16 +63,18 @@ function DraggableCard({
     <div
       ref={setNodeRef}
       style={style}
-      {...listeners}
+      {...(isGrouped ? {} : listeners)} // Don't attach listeners if grouped
       {...attributes}
       onClick={(e) => {
-        // Only trigger onClick if not dragging
-        if (!isDragging && onClick) {
+        // Only trigger onClick if not dragging and not grouped
+        if (!isDragging && onClick && !isGrouped) {
           e.stopPropagation()
           onClick()
         }
       }}
-      className={isSelected ? 'ring-4 ring-green-500 rounded-lg' : ''}
+      className={`relative ${isSelected ? 'ring-4 ring-green-500 rounded-lg' : ''} ${
+        isGrouped ? 'opacity-40 pointer-events-none' : ''
+      }`}
     >
       <Card
         id={id}
@@ -78,6 +83,11 @@ function DraggableCard({
         isInPile={isInPile}
         pileColor={pileColor}
       />
+      {isGrouped && (
+        <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-10 rounded-lg">
+          <span className="text-2xl">✓</span>
+        </div>
+      )}
     </div>
   )
 }
@@ -89,15 +99,18 @@ function DroppableCard({
   id,
   title,
   isSelected,
+  isGrouped,
   onClick,
 }: {
   id: string
   title: string
   isSelected?: boolean
+  isGrouped?: boolean
   onClick?: () => void
 }) {
   const { isOver, setNodeRef } = useDroppable({
     id: `card-drop-${id}`,
+    disabled: isGrouped, // Disable dropping on grouped cards
   })
 
   return (
@@ -107,6 +120,7 @@ function DroppableCard({
         title={title}
         isInPile={false}
         isSelected={isSelected}
+        isGrouped={isGrouped}
         onClick={onClick}
       />
     </div>
@@ -160,6 +174,7 @@ export function GameBoard() {
   const [activeId, setActiveId] = useState<string | null>(null)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
   const [selectedCardIds, setSelectedCardIds] = useState<string[]>([])
+  const [showAllCards, setShowAllCards] = useState<boolean>(true) // Show all cards by default
 
   // Configure sensors for mouse, touch, and pointer interactions
   const sensors = useSensors(
@@ -182,6 +197,14 @@ export function GameBoard() {
   )
 
   const ungroupedCards = getUngroupedCards(state)
+
+  // Determine which cards to display
+  const displayCards = showAllCards ? state.cards : ungroupedCards
+
+  // Helper to check if a card is grouped
+  const isCardGrouped = (cardId: string) => {
+    return state.piles.some((pile) => pile.cardIds.includes(cardId))
+  }
 
   function handleDragStart(event: DragStartEvent) {
     setActiveId(event.active.id as string)
@@ -380,17 +403,39 @@ export function GameBoard() {
         </div>
       )}
 
-      {/* Ungrouped Cards */}
+      {/* All Cards Grid */}
       <div className="mb-6">
         <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-gray-300">
-          <div className="mb-4">
-            <h2 className="text-2xl font-bold text-gray-800">Ungrouped Cards</h2>
-            <p className="text-sm text-gray-600 mt-1">
-              <span className="font-semibold">{ungroupedCards.length}</span> cards remaining
-              <span className="text-gray-400 ml-2">
-                ({state.cards.length - ungroupedCards.length} grouped)
-              </span>
-            </p>
+          <div className="mb-4 flex items-center justify-between">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800">
+                {showAllCards ? 'All Cards' : 'Ungrouped Cards'}
+              </h2>
+              <p className="text-sm text-gray-600 mt-1">
+                <span className="font-semibold">{ungroupedCards.length}</span> cards remaining
+                <span className="text-gray-400 ml-2">
+                  ({state.cards.length - ungroupedCards.length} grouped)
+                </span>
+              </p>
+            </div>
+            {showAllCards && ungroupedCards.length < state.cards.length && (
+              <button
+                type="button"
+                onClick={() => setShowAllCards(false)}
+                className="px-4 py-2 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-600 transition-colors shadow-md"
+              >
+                Clean Up Grid
+              </button>
+            )}
+            {!showAllCards && (
+              <button
+                type="button"
+                onClick={() => setShowAllCards(true)}
+                className="px-4 py-2 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-600 transition-colors shadow-md"
+              >
+                Show All Cards
+              </button>
+            )}
           </div>
 
           {ungroupedCards.length === 0 ? (
@@ -402,15 +447,19 @@ export function GameBoard() {
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-              {ungroupedCards.map((card) => (
-                <DroppableCard
-                  key={card.id}
-                  id={card.id}
-                  title={card.title}
-                  isSelected={selectedCardIds.includes(card.id)}
-                  onClick={() => handleCardClick(card.id)}
-                />
-              ))}
+              {displayCards.map((card) => {
+                const grouped = isCardGrouped(card.id)
+                return (
+                  <DroppableCard
+                    key={card.id}
+                    id={card.id}
+                    title={card.title}
+                    isSelected={selectedCardIds.includes(card.id)}
+                    isGrouped={grouped}
+                    onClick={() => handleCardClick(card.id)}
+                  />
+                )
+              })}
             </div>
           )}
         </div>
