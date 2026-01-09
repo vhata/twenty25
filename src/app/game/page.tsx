@@ -20,8 +20,7 @@ export const metadata: Metadata = {
  */
 export default function GamePage() {
   // Load game data on the server (YAML parsing, validation, shuffling)
-  // Using skipStrictValidation for development with partial data
-  const gameData = loadGameData(true)
+  const gameData = loadGameData(false)
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-8 px-4">
