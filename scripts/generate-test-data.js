@@ -22,7 +22,7 @@ const categories = categoryLetters.map((letter, catIndex) => {
   for (let cardIndex = 1; cardIndex <= 45; cardIndex++) {
     cards.push({
       id: `card-${catIndex + 1}-${cardIndex}`,
-      title: letter.repeat(cardIndex), // a, aa, aaa, aaaa, etc.
+      title: `${letter}${cardIndex}`, // a1, a2, a3, ... b1, b2, b3, etc.
     })
   }
 

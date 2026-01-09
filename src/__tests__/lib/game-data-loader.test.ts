@@ -90,4 +90,20 @@ describe('loadGameData', () => {
       expect(categoryIds.has(card.categoryId)).toBe(true)
     }
   })
+
+  it('should have unique card titles', () => {
+    const gameData = loadGameData(true)
+    const cardTitles = gameData.cards.map((c) => c.title)
+    const uniqueTitles = new Set(cardTitles)
+
+    expect(uniqueTitles.size).toBe(cardTitles.length)
+  })
+
+  it('should have unique category names', () => {
+    const gameData = loadGameData(true)
+    const categoryNames = gameData.categories.map((c) => c.name)
+    const uniqueNames = new Set(categoryNames)
+
+    expect(uniqueNames.size).toBe(categoryNames.length)
+  })
 })
