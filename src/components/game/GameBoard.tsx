@@ -235,27 +235,40 @@ export function GameBoard() {
     }
 
     // Add card to selection
-    setSelectedCardIds([...selectedCardIds, cardId])
+    const newSelection = [...selectedCardIds, cardId]
+    setSelectedCardIds(newSelection)
 
-    if (selectedCardIds.length === 0) {
-      setFeedbackMessage('Card selected. Select more cards to group them together.')
+    // Auto-submit when exactly 2 cards are selected
+    if (newSelection.length === 2) {
+      // Short delay to show the selection before submitting
+      setTimeout(() => {
+        handleCreatePileFromSelected(newSelection)
+      }, 300)
+      setFeedbackMessage('Creating pile from 2 cards...')
+      return
+    }
+
+    if (newSelection.length === 1) {
+      setFeedbackMessage('Card selected. Click one more card to create a pile.')
       setTimeout(() => setFeedbackMessage(null), 3000)
     } else {
-      setFeedbackMessage(`${selectedCardIds.length + 1} cards selected`)
-      setTimeout(() => setFeedbackMessage(null), 2000)
+      setFeedbackMessage(`${newSelection.length} cards selected. Click "Create Pile" button below.`)
+      setTimeout(() => setFeedbackMessage(null), 3000)
     }
   }
 
   // Create pile from all selected cards
-  function handleCreatePileFromSelected() {
-    if (selectedCardIds.length < 2) {
+  function handleCreatePileFromSelected(cardsToGroup?: string[]) {
+    const cards = cardsToGroup || selectedCardIds
+
+    if (cards.length < 2) {
       setFeedbackMessage('Select at least 2 cards to create a pile')
       setTimeout(() => setFeedbackMessage(null), 2000)
       return
     }
 
     // Start with first two cards
-    const [first, second, ...rest] = selectedCardIds
+    const [first, second, ...rest] = cards
     const success = tryCreatePile(first, second)
 
     if (!success) {
@@ -335,22 +348,21 @@ export function GameBoard() {
       {/* Instructions Banner */}
       <div className="mb-4 bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
         <p className="text-sm text-blue-800">
-          <strong>How to play:</strong> Click cards to select them (you can select multiple!), then
-          use the "Create Pile" button or click an existing pile. Or drag and drop cards to group
+          <strong>How to play:</strong> Click any 2 cards to instantly create a pile. For 3+ cards,
+          click to select them, then use the "Create Pile" button. Or drag and drop cards to group
           them.
         </p>
       </div>
 
-      {/* Create Pile Button */}
-      {selectedCardIds.length >= 2 && (
+      {/* Create Pile Button - Only show for 3+ cards (2 cards auto-submit) */}
+      {selectedCardIds.length >= 3 && (
         <div className="mb-4 flex justify-center">
           <button
             type="button"
-            onClick={handleCreatePileFromSelected}
-            className="px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors shadow-md"
+            onClick={() => handleCreatePileFromSelected()}
+            className="px-10 py-4 bg-green-500 text-white font-bold text-lg rounded-lg hover:bg-green-600 transition-colors shadow-lg hover:shadow-xl animate-pulse"
           >
-            Create Pile from {selectedCardIds.length} Selected Card
-            {selectedCardIds.length > 1 ? 's' : ''}
+            Create Pile from {selectedCardIds.length} Selected Cards
           </button>
         </div>
       )}
